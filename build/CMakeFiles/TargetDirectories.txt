@@ -1,0 +1,15 @@
+/home/maike/Github/black_headed_vulture/build/CMakeFiles/rebuild_cache.dir
+/home/maike/Github/black_headed_vulture/build/CMakeFiles/edit_cache.dir
+/home/maike/Github/black_headed_vulture/build/src/CMakeFiles/rebuild_cache.dir
+/home/maike/Github/black_headed_vulture/build/src/CMakeFiles/LIBS.dir
+/home/maike/Github/black_headed_vulture/build/src/CMakeFiles/edit_cache.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/firmwaresize_MAIN.awk.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/MAIN.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/edit_cache.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/MAIN.elf.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/size.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/upload_eeprom.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/upload.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/get_status_MAIN.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/rebuild_cache.dir
+/home/maike/Github/black_headed_vulture/build/app/CMakeFiles/disassemble.dir

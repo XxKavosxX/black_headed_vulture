@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+d4b84a3d4e432d2c316ad0860bf7f3f7 app/CMakeFiles/MAIN
+cbf93bcc4b4a110e79171c56c157da53 app/CMakeFiles/disassemble
+614b437cbeea08171d95f465150c9320 app/CMakeFiles/firmwaresize_MAIN.awk
+f37d62fe9090d75ae247b55749c9296e app/CMakeFiles/get_status_MAIN
+dd02452d64d981c9ec7f4e1d72579f34 app/CMakeFiles/size
+ecd44b2dcb1c89d2929cd2f59da5ee52 app/CMakeFiles/upload
+93f6b23478f0e1bc0f9c58d2da091730 app/CMakeFiles/upload_eeprom
+cb432c4fafc8a826c07cd46f0758d9be app/MAIN-eeprom.hex
+7623390837d57dae27a37038f93ed4ef app/MAIN.hex

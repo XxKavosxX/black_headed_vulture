@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maike/Github/black_headed_vulture/app/main.c
+avr/io.h
+-
+util/delay.h
+-
+../src/libs/adc.h
+/home/maike/Github/black_headed_vulture/src/libs/adc.h
+
+/home/maike/Github/black_headed_vulture/src/libs/adc.h
+
