@@ -125,32 +125,32 @@ LIBS/fast:
 	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/build
 .PHONY : LIBS/fast
 
-libs/adc.o: libs/adc.c.o
+avr_libs/adc.o: avr_libs/adc.c.o
 
-.PHONY : libs/adc.o
+.PHONY : avr_libs/adc.o
 
 # target to build an object file
-libs/adc.c.o:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/libs/adc.c.o
-.PHONY : libs/adc.c.o
+avr_libs/adc.c.o:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o
+.PHONY : avr_libs/adc.c.o
 
-libs/adc.i: libs/adc.c.i
+avr_libs/adc.i: avr_libs/adc.c.i
 
-.PHONY : libs/adc.i
+.PHONY : avr_libs/adc.i
 
 # target to preprocess a source file
-libs/adc.c.i:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/libs/adc.c.i
-.PHONY : libs/adc.c.i
+avr_libs/adc.c.i:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/adc.c.i
+.PHONY : avr_libs/adc.c.i
 
-libs/adc.s: libs/adc.c.s
+avr_libs/adc.s: avr_libs/adc.c.s
 
-.PHONY : libs/adc.s
+.PHONY : avr_libs/adc.s
 
 # target to generate assembly for a file
-libs/adc.c.s:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/libs/adc.c.s
-.PHONY : libs/adc.c.s
+avr_libs/adc.c.s:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/adc.c.s
+.PHONY : avr_libs/adc.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LIBS"
 	@echo "... edit_cache"
-	@echo "... libs/adc.o"
-	@echo "... libs/adc.i"
-	@echo "... libs/adc.s"
+	@echo "... avr_libs/adc.o"
+	@echo "... avr_libs/adc.i"
+	@echo "... avr_libs/adc.s"
 .PHONY : help
 
 

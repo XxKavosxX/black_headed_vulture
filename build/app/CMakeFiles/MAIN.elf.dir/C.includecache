@@ -6,13 +6,43 @@
 
 #IncludeRegexTransform: 
 
+../app/../src/avr_libs/adc.h
+definitions.h
+../app/../src/avr_libs/definitions.h
+
+../app/../src/avr_libs/definitions.h
+avr/pgmspace.h
+-
+avr/eeprom.h
+-
+avr/io.h
+-
+util/delay.h
+-
+inttypes.h
+-
+stdint.h
+-
+string.h
+-
+stdbool.h
+-
+stdlib.h
+-
+ctype.h
+-
+avr/interrupt.h
+-
+util/twi.h
+-
+stdio.h
+-
+
 /home/maike/Github/black_headed_vulture/app/main.c
 avr/io.h
 -
 util/delay.h
 -
-../src/libs/adc.h
-/home/maike/Github/black_headed_vulture/src/libs/adc.h
-
-/home/maike/Github/black_headed_vulture/src/libs/adc.h
+adc.h
+/home/maike/Github/black_headed_vulture/app/adc.h
 

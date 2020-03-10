@@ -6,5 +6,5 @@ C_FLAGS = -O3 -DNDEBUG   -ffunction-sections -fdata-sections -fpack-struct -fsho
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/maike/Github/black_headed_vulture/src/src 
+C_INCLUDES = -I/home/maike/Github/black_headed_vulture/app/../src/avr_libs -I/home/maike/Github/black_headed_vulture/src/src 
 

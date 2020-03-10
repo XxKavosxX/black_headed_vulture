@@ -6,9 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/maike/Github/black_headed_vulture/src/libs/adc.c
+/home/maike/Github/black_headed_vulture/src/avr_libs/adc.c
 adc.h
-/home/maike/Github/black_headed_vulture/src/libs/adc.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/adc.h
 
-/home/maike/Github/black_headed_vulture/src/libs/adc.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/adc.h
+definitions.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
+
+/home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
+avr/pgmspace.h
+-
+avr/eeprom.h
+-
+avr/io.h
+-
+util/delay.h
+-
+inttypes.h
+-
+stdint.h
+-
+string.h
+-
+stdbool.h
+-
+stdlib.h
+-
+ctype.h
+-
+avr/interrupt.h
+-
+util/twi.h
+-
+stdio.h
+-
 

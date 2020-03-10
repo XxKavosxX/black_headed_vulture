@@ -15,7 +15,7 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
-#include "../src/libs/adc.h"
+#include "adc.h"
 
 int main(void)
 {
@@ -23,7 +23,7 @@ int main(void)
     while (1)
     {   
         
-        sum();
+        adc_get_status();
         PORTB ^= 1 << PINB5; // PC0 = High = Vcc
         _delay_ms(100);      // wait 500 milliseconds
 

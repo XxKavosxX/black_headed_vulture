@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LIBS.dir/libs/adc.c.o"
+  "CMakeFiles/LIBS.dir/avr_libs/adc.c.o"
   "libLIBS.pdb"
   "libLIBS.a"
 )

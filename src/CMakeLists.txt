@@ -24,7 +24,8 @@
 
 
 add_avr_library(LIBS
-                libs/adc.c
-                libs/adc.h)
+                avr_libs/adc.c
+                avr_libs/adc.h
+                avr_libs/definitions.h)
 
 target_include_directories(LIBS PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
