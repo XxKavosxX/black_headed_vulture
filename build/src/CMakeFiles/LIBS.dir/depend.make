@@ -5,3 +5,7 @@ src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o: ../src/avr_libs/adc.c
 src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o: ../src/avr_libs/adc.h
 src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o: ../src/avr_libs/definitions.h
 
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/definitions.h
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/usart.c
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/usart.h
+

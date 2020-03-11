@@ -81,17 +81,43 @@ src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o.provides: src/CMakeFiles/LIBS.dir/avr_l
 src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o.provides.build: src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o
 
 
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: src/CMakeFiles/LIBS.dir/flags.make
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o"
+	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIBS.dir/avr_libs/usart.c.o   -c /home/maike/Github/black_headed_vulture/src/avr_libs/usart.c
+
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LIBS.dir/avr_libs/usart.c.i"
+	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maike/Github/black_headed_vulture/src/avr_libs/usart.c > CMakeFiles/LIBS.dir/avr_libs/usart.c.i
+
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LIBS.dir/avr_libs/usart.c.s"
+	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maike/Github/black_headed_vulture/src/avr_libs/usart.c -o CMakeFiles/LIBS.dir/avr_libs/usart.c.s
+
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.requires:
+
+.PHONY : src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.requires
+
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.provides: src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.requires
+	$(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.provides.build
+.PHONY : src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.provides
+
+src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.provides.build: src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o
+
+
 # Object files for target LIBS
 LIBS_OBJECTS = \
-"CMakeFiles/LIBS.dir/avr_libs/adc.c.o"
+"CMakeFiles/LIBS.dir/avr_libs/adc.c.o" \
+"CMakeFiles/LIBS.dir/avr_libs/usart.c.o"
 
 # External object files for target LIBS
 LIBS_EXTERNAL_OBJECTS =
 
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o
+src/libLIBS.a: src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/build.make
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libLIBS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libLIBS.a"
 	cd /home/maike/Github/black_headed_vulture/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LIBS.dir/cmake_clean_target.cmake
 	cd /home/maike/Github/black_headed_vulture/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIBS.dir/link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +127,7 @@ src/CMakeFiles/LIBS.dir/build: src/libLIBS.a
 .PHONY : src/CMakeFiles/LIBS.dir/build
 
 src/CMakeFiles/LIBS.dir/requires: src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o.requires
+src/CMakeFiles/LIBS.dir/requires: src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.requires
 
 .PHONY : src/CMakeFiles/LIBS.dir/requires
 

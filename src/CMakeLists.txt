@@ -1,4 +1,4 @@
-################################################################################
+# ##############################################################################
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -19,13 +19,12 @@
 # SOFTWARE.
 #
 # Copyright (c) 2020 Maike Rodrigo https://github.com/XxKavosxX
-#     
-###############################################################################
+#
+# ##############################################################################
 
+file(GLOB SRCS ${PROJECT_ROOT_PATH}/src/avr_libs/*.c
+     ${PROJECT_ROOT_PATH}/src/avr_libs/*.h)
 
-add_avr_library(LIBS
-                avr_libs/adc.c
-                avr_libs/adc.h
-                avr_libs/definitions.h)
+add_avr_library(LIBS ${SRCS})
 
 target_include_directories(LIBS PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")

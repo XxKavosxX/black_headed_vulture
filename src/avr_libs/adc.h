@@ -19,4 +19,12 @@ _Bool adc_select_clk_freq(uint8_t prescaler);
  char adc_read();
  char adc_read_internal_temp();
 
+
+ // If at 10bits the maximum sample rate is 15kSPS and each sample uses 13 clock cycles 
+ // then the maximum clock frequency will be
+ //  m_clk = 15k x 13 = 195k
+ // The source clock will be divided by x to clock adc
+ //  prescaler = F_CPU / m_clk  = 16Mhz / 195kHz = 82
+ // The closest value is 128 that will result 9,6 kSPS
+
 #endif

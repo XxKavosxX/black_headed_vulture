@@ -1,4 +1,4 @@
-################################################################################
+# ##############################################################################
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -20,11 +20,10 @@
 #
 # Copyright (c) 2016 Igor Mikolic-Torreira
 #
-# Inspired in part by cmake toolchains created by
-#   - Tomasz Bogdal (@queezythegreat on GitHub)
-#   - Matthias Kleemann (@mkleemann on GitHub)
+# Inspired in part by cmake toolchains created by - Tomasz Bogdal
+# (@queezythegreat on GitHub) - Matthias Kleemann (@mkleemann on GitHub)
 #
-###############################################################################
+# ##############################################################################
 
 cmake_minimum_required(VERSION 3.10)
 
@@ -33,6 +32,7 @@ project(
   VERSION 1.0.0
   LANGUAGES C CXX ASM)
 
+set(PROJECT_ROOT_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 set(AVR_PATH "/usr/lib/avr")
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
@@ -43,8 +43,8 @@ set(CMAKE_SYSTEM_LIBRARY_PATH "${CMAKE_FIND_ROOT_PATH}/lib")
 set(AVR_MCU atmega328p)
 set(AVR_MCU_SPEED 16000000UL)
 set(AVR_UPLOADTOOL avrdude)
-set(AVR_UPLOADTOOL_PORT /dev/ttyACM0)
-set(AVR_UPLOAD_SPEED 115200)
+set(AVR_UPLOADTOOL_PORT /dev/ttyUSB0)
+set(AVR_UPLOAD_SPEED 57600)
 set(AVR_PROGRAMMER arduino)
 set(AVR_SIZE_ARGS -C;--mcu=${AVR_MCU})
 set(AVR_UPLOADTOOL_OPTIONS -b${AVR_UPLOAD_SPEED} -D -V)
@@ -103,11 +103,13 @@ message(STATUS "Current uploadtool options are: ${AVR_UPLOADTOOL_OPTIONS}")
 message(STATUS "Current AVR MCU is set to: ${AVR_MCU}")
 message(STATUS "Current AVR MCU speed is set to: ${AVR_MCU_SPEED}")
 
-
 function(add_avr_executable EXECUTABLE_NAME)
 
   if(NOT ARGN)
-    message(FATAL_ERROR "ADD_AVR_EXECUTABLE ERROR: No source files given for ${EXECUTABLE_NAME}.")
+    message(
+      FATAL_ERROR
+        "ADD_AVR_EXECUTABLE ERROR: No source files given for ${EXECUTABLE_NAME}."
+    )
   endif(NOT ARGN)
 
   set(elf_file ${EXECUTABLE_NAME}${MCU_TYPE_FOR_FILENAME}.elf)
@@ -122,7 +124,7 @@ function(add_avr_executable EXECUTABLE_NAME)
 
   target_compile_options(
     ${elf_file}
-     PUBLIC -ffunction-sections
+    PUBLIC -ffunction-sections
            -fdata-sections
            -fpack-struct
            -fshort-enums
@@ -181,7 +183,7 @@ function(add_avr_executable EXECUTABLE_NAME)
 
   # upload - with avrdude
   add_custom_target(
-    upload
+    upload_${EXECUTABLE_NAME}
     ${AVR_UPLOADTOOL}
     -p
     ${AVR_MCU}
@@ -196,7 +198,7 @@ function(add_avr_executable EXECUTABLE_NAME)
     COMMENT "Uploading ${hex_file} to ${AVR_MCU} using ${AVR_PROGRAMMER}")
 
   add_custom_target(
-    upload_eeprom
+    upload_eeprom_${EXECUTABLE_NAME}
     ${AVR_UPLOADTOOL}
     -p
     ${AVR_MCU}
@@ -226,13 +228,13 @@ function(add_avr_executable EXECUTABLE_NAME)
 
   # disassemble
   add_custom_target(
-    disassemble
+    disassemble_${EXECUTABLE_NAME}
     ${AVR_OBJDUMP} -h -S ${elf_file} > ${EXECUTABLE_NAME}.lst
     DEPENDS ${elf_file})
 
   # size
   add_custom_target(
-    size
+    size_${EXECUTABLE_NAME}
     ${AVR_SIZE_TOOL}
     -C;--mcu=${AVR_MCU}
     ${elf_file}
@@ -261,7 +263,6 @@ function(add_avr_executable EXECUTABLE_NAME)
     VERBATIM)
 
 endfunction(add_avr_executable)
-
 
 function(add_avr_library LIBRARY_NAME)
 
@@ -317,3 +318,4 @@ endfunction(avr_target_link_libraries EXECUTABLE_TARGET)
 
 add_subdirectory(src)
 add_subdirectory(app)
+add_subdirectory(tests)

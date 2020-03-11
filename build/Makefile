@@ -124,6 +124,58 @@ LIBS/fast:
 .PHONY : LIBS/fast
 
 #=============================================================================
+# Target rules for targets named size_MAIN
+
+# Build rule for target.
+size_MAIN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 size_MAIN
+.PHONY : size_MAIN
+
+# fast build rule for target.
+size_MAIN/fast:
+	$(MAKE) -f app/CMakeFiles/size_MAIN.dir/build.make app/CMakeFiles/size_MAIN.dir/build
+.PHONY : size_MAIN/fast
+
+#=============================================================================
+# Target rules for targets named MAIN.elf
+
+# Build rule for target.
+MAIN.elf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MAIN.elf
+.PHONY : MAIN.elf
+
+# fast build rule for target.
+MAIN.elf/fast:
+	$(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/build
+.PHONY : MAIN.elf/fast
+
+#=============================================================================
+# Target rules for targets named upload_MAIN
+
+# Build rule for target.
+upload_MAIN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_MAIN
+.PHONY : upload_MAIN
+
+# fast build rule for target.
+upload_MAIN/fast:
+	$(MAKE) -f app/CMakeFiles/upload_MAIN.dir/build.make app/CMakeFiles/upload_MAIN.dir/build
+.PHONY : upload_MAIN/fast
+
+#=============================================================================
+# Target rules for targets named upload_eeprom_MAIN
+
+# Build rule for target.
+upload_eeprom_MAIN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_eeprom_MAIN
+.PHONY : upload_eeprom_MAIN
+
+# fast build rule for target.
+upload_eeprom_MAIN/fast:
+	$(MAKE) -f app/CMakeFiles/upload_eeprom_MAIN.dir/build.make app/CMakeFiles/upload_eeprom_MAIN.dir/build
+.PHONY : upload_eeprom_MAIN/fast
+
+#=============================================================================
 # Target rules for targets named firmwaresize_MAIN.awk
 
 # Build rule for target.
@@ -150,56 +202,17 @@ MAIN/fast:
 .PHONY : MAIN/fast
 
 #=============================================================================
-# Target rules for targets named MAIN.elf
+# Target rules for targets named disassemble_MAIN
 
 # Build rule for target.
-MAIN.elf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MAIN.elf
-.PHONY : MAIN.elf
+disassemble_MAIN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 disassemble_MAIN
+.PHONY : disassemble_MAIN
 
 # fast build rule for target.
-MAIN.elf/fast:
-	$(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/build
-.PHONY : MAIN.elf/fast
-
-#=============================================================================
-# Target rules for targets named size
-
-# Build rule for target.
-size: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 size
-.PHONY : size
-
-# fast build rule for target.
-size/fast:
-	$(MAKE) -f app/CMakeFiles/size.dir/build.make app/CMakeFiles/size.dir/build
-.PHONY : size/fast
-
-#=============================================================================
-# Target rules for targets named upload_eeprom
-
-# Build rule for target.
-upload_eeprom: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 upload_eeprom
-.PHONY : upload_eeprom
-
-# fast build rule for target.
-upload_eeprom/fast:
-	$(MAKE) -f app/CMakeFiles/upload_eeprom.dir/build.make app/CMakeFiles/upload_eeprom.dir/build
-.PHONY : upload_eeprom/fast
-
-#=============================================================================
-# Target rules for targets named upload
-
-# Build rule for target.
-upload: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 upload
-.PHONY : upload
-
-# fast build rule for target.
-upload/fast:
-	$(MAKE) -f app/CMakeFiles/upload.dir/build.make app/CMakeFiles/upload.dir/build
-.PHONY : upload/fast
+disassemble_MAIN/fast:
+	$(MAKE) -f app/CMakeFiles/disassemble_MAIN.dir/build.make app/CMakeFiles/disassemble_MAIN.dir/build
+.PHONY : disassemble_MAIN/fast
 
 #=============================================================================
 # Target rules for targets named get_status_MAIN
@@ -215,17 +228,108 @@ get_status_MAIN/fast:
 .PHONY : get_status_MAIN/fast
 
 #=============================================================================
-# Target rules for targets named disassemble
+# Target rules for targets named USART_TEST
 
 # Build rule for target.
-disassemble: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 disassemble
-.PHONY : disassemble
+USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 USART_TEST
+.PHONY : USART_TEST
 
 # fast build rule for target.
-disassemble/fast:
-	$(MAKE) -f app/CMakeFiles/disassemble.dir/build.make app/CMakeFiles/disassemble.dir/build
-.PHONY : disassemble/fast
+USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/USART_TEST.dir/build.make tests/CMakeFiles/USART_TEST.dir/build
+.PHONY : USART_TEST/fast
+
+#=============================================================================
+# Target rules for targets named get_status_USART_TEST
+
+# Build rule for target.
+get_status_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_status_USART_TEST
+.PHONY : get_status_USART_TEST
+
+# fast build rule for target.
+get_status_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/get_status_USART_TEST.dir/build.make tests/CMakeFiles/get_status_USART_TEST.dir/build
+.PHONY : get_status_USART_TEST/fast
+
+#=============================================================================
+# Target rules for targets named USART_TEST.elf
+
+# Build rule for target.
+USART_TEST.elf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 USART_TEST.elf
+.PHONY : USART_TEST.elf
+
+# fast build rule for target.
+USART_TEST.elf/fast:
+	$(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/build
+.PHONY : USART_TEST.elf/fast
+
+#=============================================================================
+# Target rules for targets named firmwaresize_USART_TEST.awk
+
+# Build rule for target.
+firmwaresize_USART_TEST.awk: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 firmwaresize_USART_TEST.awk
+.PHONY : firmwaresize_USART_TEST.awk
+
+# fast build rule for target.
+firmwaresize_USART_TEST.awk/fast:
+	$(MAKE) -f tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build
+.PHONY : firmwaresize_USART_TEST.awk/fast
+
+#=============================================================================
+# Target rules for targets named upload_USART_TEST
+
+# Build rule for target.
+upload_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_USART_TEST
+.PHONY : upload_USART_TEST
+
+# fast build rule for target.
+upload_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/upload_USART_TEST.dir/build.make tests/CMakeFiles/upload_USART_TEST.dir/build
+.PHONY : upload_USART_TEST/fast
+
+#=============================================================================
+# Target rules for targets named upload_eeprom_USART_TEST
+
+# Build rule for target.
+upload_eeprom_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_eeprom_USART_TEST
+.PHONY : upload_eeprom_USART_TEST
+
+# fast build rule for target.
+upload_eeprom_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build
+.PHONY : upload_eeprom_USART_TEST/fast
+
+#=============================================================================
+# Target rules for targets named size_USART_TEST
+
+# Build rule for target.
+size_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 size_USART_TEST
+.PHONY : size_USART_TEST
+
+# fast build rule for target.
+size_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/size_USART_TEST.dir/build.make tests/CMakeFiles/size_USART_TEST.dir/build
+.PHONY : size_USART_TEST/fast
+
+#=============================================================================
+# Target rules for targets named disassemble_USART_TEST
+
+# Build rule for target.
+disassemble_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 disassemble_USART_TEST
+.PHONY : disassemble_USART_TEST
+
+# fast build rule for target.
+disassemble_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/disassemble_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_USART_TEST.dir/build
+.PHONY : disassemble_USART_TEST/fast
 
 # Help Target
 help:
@@ -236,14 +340,22 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LIBS"
+	@echo "... size_MAIN"
+	@echo "... MAIN.elf"
+	@echo "... upload_MAIN"
+	@echo "... upload_eeprom_MAIN"
 	@echo "... firmwaresize_MAIN.awk"
 	@echo "... MAIN"
-	@echo "... MAIN.elf"
-	@echo "... size"
-	@echo "... upload_eeprom"
-	@echo "... upload"
+	@echo "... disassemble_MAIN"
 	@echo "... get_status_MAIN"
-	@echo "... disassemble"
+	@echo "... USART_TEST"
+	@echo "... get_status_USART_TEST"
+	@echo "... USART_TEST.elf"
+	@echo "... firmwaresize_USART_TEST.awk"
+	@echo "... upload_USART_TEST"
+	@echo "... upload_eeprom_USART_TEST"
+	@echo "... size_USART_TEST"
+	@echo "... disassemble_USART_TEST"
 .PHONY : help
 
 

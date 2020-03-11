@@ -42,3 +42,11 @@ util/twi.h
 stdio.h
 -
 
+/home/maike/Github/black_headed_vulture/src/avr_libs/usart.c
+usart.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/usart.h
+
+/home/maike/Github/black_headed_vulture/src/avr_libs/usart.h
+definitions.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
+

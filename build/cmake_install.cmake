@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/maike/Github/black_headed_vulture/build/src/cmake_install.cmake")
   include("/home/maike/Github/black_headed_vulture/build/app/cmake_install.cmake")
+  include("/home/maike/Github/black_headed_vulture/build/tests/cmake_install.cmake")
 
 endif()
 

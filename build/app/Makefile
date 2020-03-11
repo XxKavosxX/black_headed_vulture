@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/maike/Github/black_headed_vulture/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,66 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+app/CMakeFiles/size_MAIN.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/size_MAIN.dir/rule
+.PHONY : app/CMakeFiles/size_MAIN.dir/rule
+
+# Convenience name for target.
+size_MAIN: app/CMakeFiles/size_MAIN.dir/rule
+
+.PHONY : size_MAIN
+
+# fast build rule for target.
+size_MAIN/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/size_MAIN.dir/build.make app/CMakeFiles/size_MAIN.dir/build
+.PHONY : size_MAIN/fast
+
+# Convenience name for target.
+app/CMakeFiles/MAIN.elf.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/MAIN.elf.dir/rule
+.PHONY : app/CMakeFiles/MAIN.elf.dir/rule
+
+# Convenience name for target.
+MAIN.elf: app/CMakeFiles/MAIN.elf.dir/rule
+
+.PHONY : MAIN.elf
+
+# fast build rule for target.
+MAIN.elf/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/build
+.PHONY : MAIN.elf/fast
+
+# Convenience name for target.
+app/CMakeFiles/upload_MAIN.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload_MAIN.dir/rule
+.PHONY : app/CMakeFiles/upload_MAIN.dir/rule
+
+# Convenience name for target.
+upload_MAIN: app/CMakeFiles/upload_MAIN.dir/rule
+
+.PHONY : upload_MAIN
+
+# fast build rule for target.
+upload_MAIN/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/upload_MAIN.dir/build.make app/CMakeFiles/upload_MAIN.dir/build
+.PHONY : upload_MAIN/fast
+
+# Convenience name for target.
+app/CMakeFiles/upload_eeprom_MAIN.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload_eeprom_MAIN.dir/rule
+.PHONY : app/CMakeFiles/upload_eeprom_MAIN.dir/rule
+
+# Convenience name for target.
+upload_eeprom_MAIN: app/CMakeFiles/upload_eeprom_MAIN.dir/rule
+
+.PHONY : upload_eeprom_MAIN
+
+# fast build rule for target.
+upload_eeprom_MAIN/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/upload_eeprom_MAIN.dir/build.make app/CMakeFiles/upload_eeprom_MAIN.dir/build
+.PHONY : upload_eeprom_MAIN/fast
+
+# Convenience name for target.
 app/CMakeFiles/firmwaresize_MAIN.awk.dir/rule:
 	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/firmwaresize_MAIN.awk.dir/rule
 .PHONY : app/CMakeFiles/firmwaresize_MAIN.awk.dir/rule
@@ -141,64 +201,19 @@ MAIN/fast:
 .PHONY : MAIN/fast
 
 # Convenience name for target.
-app/CMakeFiles/MAIN.elf.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/MAIN.elf.dir/rule
-.PHONY : app/CMakeFiles/MAIN.elf.dir/rule
+app/CMakeFiles/disassemble_MAIN.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/disassemble_MAIN.dir/rule
+.PHONY : app/CMakeFiles/disassemble_MAIN.dir/rule
 
 # Convenience name for target.
-MAIN.elf: app/CMakeFiles/MAIN.elf.dir/rule
+disassemble_MAIN: app/CMakeFiles/disassemble_MAIN.dir/rule
 
-.PHONY : MAIN.elf
+.PHONY : disassemble_MAIN
 
 # fast build rule for target.
-MAIN.elf/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/build
-.PHONY : MAIN.elf/fast
-
-# Convenience name for target.
-app/CMakeFiles/size.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/size.dir/rule
-.PHONY : app/CMakeFiles/size.dir/rule
-
-# Convenience name for target.
-size: app/CMakeFiles/size.dir/rule
-
-.PHONY : size
-
-# fast build rule for target.
-size/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/size.dir/build.make app/CMakeFiles/size.dir/build
-.PHONY : size/fast
-
-# Convenience name for target.
-app/CMakeFiles/upload_eeprom.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload_eeprom.dir/rule
-.PHONY : app/CMakeFiles/upload_eeprom.dir/rule
-
-# Convenience name for target.
-upload_eeprom: app/CMakeFiles/upload_eeprom.dir/rule
-
-.PHONY : upload_eeprom
-
-# fast build rule for target.
-upload_eeprom/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/upload_eeprom.dir/build.make app/CMakeFiles/upload_eeprom.dir/build
-.PHONY : upload_eeprom/fast
-
-# Convenience name for target.
-app/CMakeFiles/upload.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload.dir/rule
-.PHONY : app/CMakeFiles/upload.dir/rule
-
-# Convenience name for target.
-upload: app/CMakeFiles/upload.dir/rule
-
-.PHONY : upload
-
-# fast build rule for target.
-upload/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/upload.dir/build.make app/CMakeFiles/upload.dir/build
-.PHONY : upload/fast
+disassemble_MAIN/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/disassemble_MAIN.dir/build.make app/CMakeFiles/disassemble_MAIN.dir/build
+.PHONY : disassemble_MAIN/fast
 
 # Convenience name for target.
 app/CMakeFiles/get_status_MAIN.dir/rule:
@@ -214,21 +229,6 @@ get_status_MAIN: app/CMakeFiles/get_status_MAIN.dir/rule
 get_status_MAIN/fast:
 	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/get_status_MAIN.dir/build.make app/CMakeFiles/get_status_MAIN.dir/build
 .PHONY : get_status_MAIN/fast
-
-# Convenience name for target.
-app/CMakeFiles/disassemble.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/disassemble.dir/rule
-.PHONY : app/CMakeFiles/disassemble.dir/rule
-
-# Convenience name for target.
-disassemble: app/CMakeFiles/disassemble.dir/rule
-
-.PHONY : disassemble
-
-# fast build rule for target.
-disassemble/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f app/CMakeFiles/disassemble.dir/build.make app/CMakeFiles/disassemble.dir/build
-.PHONY : disassemble/fast
 
 main.o: main.c.o
 
@@ -263,16 +263,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... firmwaresize_MAIN.awk"
-	@echo "... MAIN"
+	@echo "... rebuild_cache"
+	@echo "... size_MAIN"
 	@echo "... edit_cache"
 	@echo "... MAIN.elf"
-	@echo "... size"
-	@echo "... upload_eeprom"
-	@echo "... upload"
+	@echo "... upload_MAIN"
+	@echo "... upload_eeprom_MAIN"
+	@echo "... firmwaresize_MAIN.awk"
+	@echo "... MAIN"
+	@echo "... disassemble_MAIN"
 	@echo "... get_status_MAIN"
-	@echo "... rebuild_cache"
-	@echo "... disassemble"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
