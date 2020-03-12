@@ -4,4 +4,5 @@
 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
  ../tests/../src/avr_libs/definitions.h
  ../tests/../src/avr_libs/soft_usart.h
+ ../tests/../src/avr_libs/usart.h
  /home/maike/Github/black_headed_vulture/tests/soft_usart_test.c

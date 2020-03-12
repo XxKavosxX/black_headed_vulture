@@ -38,9 +38,15 @@ stdio.h
 definitions.h
 ../tests/../src/avr_libs/definitions.h
 
+../tests/../src/avr_libs/usart.h
+definitions.h
+../tests/../src/avr_libs/definitions.h
+
 /home/maike/Github/black_headed_vulture/tests/soft_usart_test.c
 soft_usart.h
 /home/maike/Github/black_headed_vulture/tests/soft_usart.h
 util/delay.h
 /home/maike/Github/black_headed_vulture/tests/util/delay.h
+usart.h
+/home/maike/Github/black_headed_vulture/tests/usart.h
 

@@ -2,8 +2,11 @@ Archive member included to satisfy reference by file (symbol)
 
 ../src/libLIBS.a(soft_usart.c.o)
                               CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o (set_rx)
+../src/libLIBS.a(usart.c.o)   CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o (usart_enable)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
                               /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o (exit)
+/usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+                              ../src/libLIBS.a(soft_usart.c.o) (__do_clear_bss)
 
 Discarded input sections
 
@@ -12,9 +15,24 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
  .data          0x0000000000000000        0x0 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
  .bss           0x0000000000000000        0x0 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+ .text.test_send
+                0x0000000000000000       0x4a CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
  .text          0x0000000000000000        0x0 ../src/libLIBS.a(soft_usart.c.o)
  .data          0x0000000000000000        0x0 ../src/libLIBS.a(soft_usart.c.o)
  .bss           0x0000000000000000        0x0 ../src/libLIBS.a(soft_usart.c.o)
+ .text.send_char
+                0x0000000000000000       0xee ../src/libLIBS.a(soft_usart.c.o)
+ .text          0x0000000000000000        0x0 ../src/libLIBS.a(usart.c.o)
+ .data          0x0000000000000000        0x0 ../src/libLIBS.a(usart.c.o)
+ .bss           0x0000000000000000        0x0 ../src/libLIBS.a(usart.c.o)
+ .text.usart_receive
+                0x0000000000000000        0xe ../src/libLIBS.a(usart.c.o)
+ .text.usart_write
+                0x0000000000000000       0x1e ../src/libLIBS.a(usart.c.o)
+ .text.usart_write_flash
+                0x0000000000000000       0x20 ../src/libLIBS.a(usart.c.o)
+ .text.usar_flush
+                0x0000000000000000       0x10 ../src/libLIBS.a(usart.c.o)
  .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
@@ -31,6 +49,22 @@ Discarded input sections
                 0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.fixed
                 0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
 
 Memory Configuration
 
@@ -154,7 +188,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x190
+.text           0x0000000000000000      0x1b4
  *(.vectors)
  .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000000                __vectors
@@ -195,6 +229,8 @@ END GROUP
  *(.init3)
  *(.init3)
  *(.init4)
+ .init4         0x0000000000000074       0x10 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000000074                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -205,53 +241,67 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000000000000074        0x4 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
+ .init9         0x0000000000000084        0x4 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x0000000000000078        0x2 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
-                0x0000000000000078                __vector_22
-                0x0000000000000078                __vector_1
-                0x0000000000000078                __vector_24
-                0x0000000000000078                __vector_12
-                0x0000000000000078                __bad_interrupt
-                0x0000000000000078                __vector_6
-                0x0000000000000078                __vector_3
-                0x0000000000000078                __vector_23
-                0x0000000000000078                __vector_25
-                0x0000000000000078                __vector_11
-                0x0000000000000078                __vector_13
-                0x0000000000000078                __vector_17
-                0x0000000000000078                __vector_19
-                0x0000000000000078                __vector_7
-                0x0000000000000078                __vector_5
-                0x0000000000000078                __vector_4
-                0x0000000000000078                __vector_9
-                0x0000000000000078                __vector_2
-                0x0000000000000078                __vector_21
-                0x0000000000000078                __vector_15
-                0x0000000000000078                __vector_8
-                0x0000000000000078                __vector_14
-                0x0000000000000078                __vector_10
-                0x0000000000000078                __vector_16
-                0x0000000000000078                __vector_18
-                0x0000000000000078                __vector_20
-                0x000000000000007a                . = ALIGN (0x2)
+ .text          0x0000000000000088        0x2 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000088                __vector_22
+                0x0000000000000088                __vector_1
+                0x0000000000000088                __vector_24
+                0x0000000000000088                __vector_12
+                0x0000000000000088                __bad_interrupt
+                0x0000000000000088                __vector_6
+                0x0000000000000088                __vector_3
+                0x0000000000000088                __vector_23
+                0x0000000000000088                __vector_25
+                0x0000000000000088                __vector_11
+                0x0000000000000088                __vector_13
+                0x0000000000000088                __vector_17
+                0x0000000000000088                __vector_19
+                0x0000000000000088                __vector_7
+                0x0000000000000088                __vector_4
+                0x0000000000000088                __vector_9
+                0x0000000000000088                __vector_2
+                0x0000000000000088                __vector_21
+                0x0000000000000088                __vector_15
+                0x0000000000000088                __vector_8
+                0x0000000000000088                __vector_14
+                0x0000000000000088                __vector_10
+                0x0000000000000088                __vector_16
+                0x0000000000000088                __vector_18
+                0x0000000000000088                __vector_20
+                0x000000000000008a                . = ALIGN (0x2)
  *(.text.*)
+ .text.test_recv
+                0x000000000000008a       0x1c CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+                0x000000000000008a                test_recv
  .text.startup.main
-                0x000000000000007a       0x1c CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
-                0x000000000000007a                main
- .text.set_rx   0x0000000000000096        0x6 ../src/libLIBS.a(soft_usart.c.o)
-                0x0000000000000096                set_rx
- .text.set_tx   0x000000000000009c        0x6 ../src/libLIBS.a(soft_usart.c.o)
-                0x000000000000009c                set_tx
- .text.send_char
-                0x00000000000000a2       0xea ../src/libLIBS.a(soft_usart.c.o)
-                0x00000000000000a2                send_char
-                0x000000000000018c                . = ALIGN (0x2)
+                0x00000000000000a6        0x2 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+                0x00000000000000a6                main
+ .text.set_rx   0x00000000000000a8        0x6 ../src/libLIBS.a(soft_usart.c.o)
+                0x00000000000000a8                set_rx
+ .text.set_tx   0x00000000000000ae        0x6 ../src/libLIBS.a(soft_usart.c.o)
+                0x00000000000000ae                set_tx
+ .text.recv_char
+                0x00000000000000b4       0x8c ../src/libLIBS.a(soft_usart.c.o)
+                0x00000000000000b4                recv_char
+ .text.enable_soft_usart_recv
+                0x0000000000000140       0x18 ../src/libLIBS.a(soft_usart.c.o)
+                0x0000000000000140                enable_soft_usart_recv
+ .text.__vector_5
+                0x0000000000000158       0x2c ../src/libLIBS.a(soft_usart.c.o)
+                0x0000000000000158                __vector_5
+ .text.usart_enable
+                0x0000000000000184       0x1e ../src/libLIBS.a(usart.c.o)
+                0x0000000000000184                usart_enable
+ .text.usart_send
+                0x00000000000001a2        0xe ../src/libLIBS.a(usart.c.o)
+                0x00000000000001a2                usart_send
+                0x00000000000001b0                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000000000000018c        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x000000000000018c                exit
-                0x000000000000018c                _exit
+ .fini9         0x00000000000001b0        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x00000000000001b0                exit
+                0x00000000000001b0                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -270,11 +320,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000000000000018c        0x4 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x00000000000001b0        0x4 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000000190                _etext = .
+                0x00000000000001b4                _etext = .
 
-.data           0x0000000000800100        0x0 load address 0x0000000000000190
+.data           0x0000000000800100        0x0 load address 0x00000000000001b4
                 [!provide]                        PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -285,20 +335,23 @@ END GROUP
                 0x0000000000800100                _edata = .
                 [!provide]                        PROVIDE (__data_end, .)
 
-.bss            0x0000000000800100        0x0
-                [!provide]                        PROVIDE (__bss_start, .)
+.bss            0x0000000000800100        0x1
+                0x0000000000800100                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
+ .bss.is_listening
+                0x0000000000800100        0x1 ../src/libLIBS.a(soft_usart.c.o)
+                0x0000000000800100                is_listening
  *(COMMON)
-                [!provide]                        PROVIDE (__bss_end, .)
-                0x0000000000000190                __data_load_start = LOADADDR (.data)
-                0x0000000000000190                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000800101                PROVIDE (__bss_end, .)
+                0x00000000000001b4                __data_load_start = LOADADDR (.data)
+                0x00000000000001b4                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0000000000800100        0x0
+.noinit         0x0000000000800101        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                        PROVIDE (__noinit_end, .)
-                0x0000000000800100                _end = .
+                0x0000000000800101                _end = .
                 [!provide]                        PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
@@ -320,13 +373,14 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000      0x684
+.stab           0x0000000000000000      0x6fc
  *(.stab)
- .stab          0x0000000000000000      0x684 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+ .stab          0x0000000000000000      0x6fc CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+                                        0x834 (size before relaxing)
 
-.stabstr        0x0000000000000000     0x1081
+.stabstr        0x0000000000000000     0x10a5
  *(.stabstr)
- .stabstr       0x0000000000000000     0x1081 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+ .stabstr       0x0000000000000000     0x10a5 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
 
 .stab.excl
  *(.stab.excl)
@@ -345,6 +399,7 @@ END GROUP
  .comment       0x0000000000000000       0x11 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
                                          0x12 (size before relaxing)
  .comment       0x0000000000000011       0x12 ../src/libLIBS.a(soft_usart.c.o)
+ .comment       0x0000000000000011       0x12 ../src/libLIBS.a(usart.c.o)
 
 .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x40
