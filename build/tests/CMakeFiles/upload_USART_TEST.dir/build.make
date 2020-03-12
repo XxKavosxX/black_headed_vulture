@@ -55,7 +55,7 @@ include tests/CMakeFiles/upload_USART_TEST.dir/progress.make
 
 tests/CMakeFiles/upload_USART_TEST: tests/USART_TEST.hex
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Uploading USART_TEST.hex to atmega328p using arduino"
-	cd /home/maike/Github/black_headed_vulture/build/tests && avrdude -p atmega328p -c arduino -b57600 -D -V -U flash:w:USART_TEST.hex -P /dev/ttyUSB0
+	cd /home/maike/Github/black_headed_vulture/build/tests && avrdude -p atmega328p -c arduino -b57600 -D -V -U flash:w:USART_TEST.hex -P /dev/ttyUSB1
 
 tests/USART_TEST.hex: tests/USART_TEST.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating USART_TEST.hex"

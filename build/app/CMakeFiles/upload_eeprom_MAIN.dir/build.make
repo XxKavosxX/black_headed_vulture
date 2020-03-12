@@ -55,7 +55,7 @@ include app/CMakeFiles/upload_eeprom_MAIN.dir/progress.make
 
 app/CMakeFiles/upload_eeprom_MAIN: app/MAIN-eeprom.hex
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Uploading MAIN-eeprom.hex to atmega328p using arduino"
-	cd /home/maike/Github/black_headed_vulture/build/app && avrdude -p atmega328p -c arduino -b57600 -D -V -U eeprom:w:MAIN-eeprom.hex -P /dev/ttyUSB0
+	cd /home/maike/Github/black_headed_vulture/build/app && avrdude -p atmega328p -c arduino -b115200 -D -V -U eeprom:w:MAIN-eeprom.hex -P /dev/ttyACM0
 
 app/MAIN-eeprom.hex: app/MAIN.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating MAIN-eeprom.hex"

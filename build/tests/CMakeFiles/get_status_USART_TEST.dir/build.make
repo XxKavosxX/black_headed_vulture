@@ -55,7 +55,7 @@ include tests/CMakeFiles/get_status_USART_TEST.dir/progress.make
 
 tests/CMakeFiles/get_status_USART_TEST:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Get status from atmega328p"
-	cd /home/maike/Github/black_headed_vulture/build/tests && avrdude -p atmega328p -c arduino -P /dev/ttyUSB0 -n -v
+	cd /home/maike/Github/black_headed_vulture/build/tests && avrdude -p atmega328p -c arduino -P /dev/ttyUSB1 -n -v
 
 get_status_USART_TEST: tests/CMakeFiles/get_status_USART_TEST
 get_status_USART_TEST: tests/CMakeFiles/get_status_USART_TEST.dir/build.make

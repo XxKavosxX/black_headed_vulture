@@ -228,108 +228,108 @@ get_status_MAIN/fast:
 .PHONY : get_status_MAIN/fast
 
 #=============================================================================
-# Target rules for targets named USART_TEST
+# Target rules for targets named firmwaresize_SOFT_USART_TEST.awk
 
 # Build rule for target.
-USART_TEST: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 USART_TEST
-.PHONY : USART_TEST
+firmwaresize_SOFT_USART_TEST.awk: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 firmwaresize_SOFT_USART_TEST.awk
+.PHONY : firmwaresize_SOFT_USART_TEST.awk
 
 # fast build rule for target.
-USART_TEST/fast:
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.dir/build.make tests/CMakeFiles/USART_TEST.dir/build
-.PHONY : USART_TEST/fast
+firmwaresize_SOFT_USART_TEST.awk/fast:
+	$(MAKE) -f tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build
+.PHONY : firmwaresize_SOFT_USART_TEST.awk/fast
 
 #=============================================================================
-# Target rules for targets named get_status_USART_TEST
+# Target rules for targets named size_SOFT_USART_TEST
 
 # Build rule for target.
-get_status_USART_TEST: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 get_status_USART_TEST
-.PHONY : get_status_USART_TEST
+size_SOFT_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 size_SOFT_USART_TEST
+.PHONY : size_SOFT_USART_TEST
 
 # fast build rule for target.
-get_status_USART_TEST/fast:
-	$(MAKE) -f tests/CMakeFiles/get_status_USART_TEST.dir/build.make tests/CMakeFiles/get_status_USART_TEST.dir/build
-.PHONY : get_status_USART_TEST/fast
+size_SOFT_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/size_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/size_SOFT_USART_TEST.dir/build
+.PHONY : size_SOFT_USART_TEST/fast
 
 #=============================================================================
-# Target rules for targets named USART_TEST.elf
+# Target rules for targets named SOFT_USART_TEST
 
 # Build rule for target.
-USART_TEST.elf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 USART_TEST.elf
-.PHONY : USART_TEST.elf
+SOFT_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SOFT_USART_TEST
+.PHONY : SOFT_USART_TEST
 
 # fast build rule for target.
-USART_TEST.elf/fast:
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/build
-.PHONY : USART_TEST.elf/fast
+SOFT_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.dir/build
+.PHONY : SOFT_USART_TEST/fast
 
 #=============================================================================
-# Target rules for targets named firmwaresize_USART_TEST.awk
+# Target rules for targets named upload_SOFT_USART_TEST
 
 # Build rule for target.
-firmwaresize_USART_TEST.awk: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 firmwaresize_USART_TEST.awk
-.PHONY : firmwaresize_USART_TEST.awk
+upload_SOFT_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_SOFT_USART_TEST
+.PHONY : upload_SOFT_USART_TEST
 
 # fast build rule for target.
-firmwaresize_USART_TEST.awk/fast:
-	$(MAKE) -f tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build
-.PHONY : firmwaresize_USART_TEST.awk/fast
+upload_SOFT_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build
+.PHONY : upload_SOFT_USART_TEST/fast
 
 #=============================================================================
-# Target rules for targets named upload_USART_TEST
+# Target rules for targets named SOFT_USART_TEST.elf
 
 # Build rule for target.
-upload_USART_TEST: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 upload_USART_TEST
-.PHONY : upload_USART_TEST
+SOFT_USART_TEST.elf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SOFT_USART_TEST.elf
+.PHONY : SOFT_USART_TEST.elf
 
 # fast build rule for target.
-upload_USART_TEST/fast:
-	$(MAKE) -f tests/CMakeFiles/upload_USART_TEST.dir/build.make tests/CMakeFiles/upload_USART_TEST.dir/build
-.PHONY : upload_USART_TEST/fast
+SOFT_USART_TEST.elf/fast:
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build
+.PHONY : SOFT_USART_TEST.elf/fast
 
 #=============================================================================
-# Target rules for targets named upload_eeprom_USART_TEST
+# Target rules for targets named upload_eeprom_SOFT_USART_TEST
 
 # Build rule for target.
-upload_eeprom_USART_TEST: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 upload_eeprom_USART_TEST
-.PHONY : upload_eeprom_USART_TEST
+upload_eeprom_SOFT_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_eeprom_SOFT_USART_TEST
+.PHONY : upload_eeprom_SOFT_USART_TEST
 
 # fast build rule for target.
-upload_eeprom_USART_TEST/fast:
-	$(MAKE) -f tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build
-.PHONY : upload_eeprom_USART_TEST/fast
+upload_eeprom_SOFT_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build
+.PHONY : upload_eeprom_SOFT_USART_TEST/fast
 
 #=============================================================================
-# Target rules for targets named size_USART_TEST
+# Target rules for targets named get_status_SOFT_USART_TEST
 
 # Build rule for target.
-size_USART_TEST: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 size_USART_TEST
-.PHONY : size_USART_TEST
+get_status_SOFT_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_status_SOFT_USART_TEST
+.PHONY : get_status_SOFT_USART_TEST
 
 # fast build rule for target.
-size_USART_TEST/fast:
-	$(MAKE) -f tests/CMakeFiles/size_USART_TEST.dir/build.make tests/CMakeFiles/size_USART_TEST.dir/build
-.PHONY : size_USART_TEST/fast
+get_status_SOFT_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build
+.PHONY : get_status_SOFT_USART_TEST/fast
 
 #=============================================================================
-# Target rules for targets named disassemble_USART_TEST
+# Target rules for targets named disassemble_SOFT_USART_TEST
 
 # Build rule for target.
-disassemble_USART_TEST: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 disassemble_USART_TEST
-.PHONY : disassemble_USART_TEST
+disassemble_SOFT_USART_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 disassemble_SOFT_USART_TEST
+.PHONY : disassemble_SOFT_USART_TEST
 
 # fast build rule for target.
-disassemble_USART_TEST/fast:
-	$(MAKE) -f tests/CMakeFiles/disassemble_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_USART_TEST.dir/build
-.PHONY : disassemble_USART_TEST/fast
+disassemble_SOFT_USART_TEST/fast:
+	$(MAKE) -f tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build
+.PHONY : disassemble_SOFT_USART_TEST/fast
 
 # Help Target
 help:
@@ -348,14 +348,14 @@ help:
 	@echo "... MAIN"
 	@echo "... disassemble_MAIN"
 	@echo "... get_status_MAIN"
-	@echo "... USART_TEST"
-	@echo "... get_status_USART_TEST"
-	@echo "... USART_TEST.elf"
-	@echo "... firmwaresize_USART_TEST.awk"
-	@echo "... upload_USART_TEST"
-	@echo "... upload_eeprom_USART_TEST"
-	@echo "... size_USART_TEST"
-	@echo "... disassemble_USART_TEST"
+	@echo "... firmwaresize_SOFT_USART_TEST.awk"
+	@echo "... size_SOFT_USART_TEST"
+	@echo "... SOFT_USART_TEST"
+	@echo "... upload_SOFT_USART_TEST"
+	@echo "... SOFT_USART_TEST.elf"
+	@echo "... upload_eeprom_SOFT_USART_TEST"
+	@echo "... get_status_SOFT_USART_TEST"
+	@echo "... disassemble_SOFT_USART_TEST"
 .PHONY : help
 
 

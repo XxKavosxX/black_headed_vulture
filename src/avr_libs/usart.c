@@ -7,6 +7,7 @@
 	Created on:
 	   11 Mar 2020
 */
+
 #include "usart.h"
 
 void usart_enable(uint16_t ubrr)
@@ -21,6 +22,7 @@ void usart_enable(uint16_t ubrr)
 	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
 	UCSR0C = (1 << USBS0) | (3 << UCSZ00);
 }
+
 void usart_send(unsigned char data)
 {
 
@@ -28,6 +30,7 @@ void usart_send(unsigned char data)
 		;
 	UDR0 = data;
 }
+
 unsigned char usart_receive()
 {
 
@@ -35,18 +38,21 @@ unsigned char usart_receive()
 		;
 	return UDR0;
 }
+
 void usart_write(char *c)
 {
 
 	for (; *c != 0; c++)
 		usart_send(*c);
 }
+
 void usart_write_flash(const char *c)
 {
 
 	for (; pgm_read_byte(&(*c)) != 0; c++)
 		usart_send(pgm_read_byte(&(*c)));
 }
+
 void usar_flush(void)
 {
 	unsigned char dummy;

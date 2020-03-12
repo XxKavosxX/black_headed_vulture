@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../tests/../src/avr_libs/definitions.h
+avr/pgmspace.h
+-
+avr/eeprom.h
+-
+avr/io.h
+-
+util/delay.h
+-
+inttypes.h
+-
+stdint.h
+-
+string.h
+-
+stdbool.h
+-
+stdlib.h
+-
+ctype.h
+-
+avr/interrupt.h
+-
+util/twi.h
+-
+stdio.h
+-
+
+../tests/../src/avr_libs/soft_usart.h
+definitions.h
+../tests/../src/avr_libs/definitions.h
+
+/home/maike/Github/black_headed_vulture/tests/soft_usart_test.c
+soft_usart.h
+/home/maike/Github/black_headed_vulture/tests/soft_usart.h
+util/delay.h
+/home/maike/Github/black_headed_vulture/tests/util/delay.h
+

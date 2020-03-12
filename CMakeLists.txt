@@ -43,8 +43,8 @@ set(CMAKE_SYSTEM_LIBRARY_PATH "${CMAKE_FIND_ROOT_PATH}/lib")
 set(AVR_MCU atmega328p)
 set(AVR_MCU_SPEED 16000000UL)
 set(AVR_UPLOADTOOL avrdude)
-set(AVR_UPLOADTOOL_PORT /dev/ttyUSB0)
-set(AVR_UPLOAD_SPEED 57600)
+set(AVR_UPLOADTOOL_PORT /dev/ttyACM0)
+set(AVR_UPLOAD_SPEED 115200)
 set(AVR_PROGRAMMER arduino)
 set(AVR_SIZE_ARGS -C;--mcu=${AVR_MCU})
 set(AVR_UPLOADTOOL_OPTIONS -b${AVR_UPLOAD_SPEED} -D -V)
@@ -173,7 +173,7 @@ function(add_avr_executable EXECUTABLE_NAME)
       ${eeprom_file}
     DEPENDS ${elf_file})
 
-  add_custom_target(${EXECUTABLE_NAME} ALL DEPENDS ${hex_file} ${eeprom_file})
+  add_custom_target(${EXECUTABLE_NAME} ALL DEPENDS ${hex_file} ${eeprom_file} ${lss_file})
 
   set_target_properties(${EXECUTABLE_NAME} PROPERTIES OUTPUT_NAME "${elf_file}")
 

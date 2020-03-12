@@ -111,151 +111,151 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/USART_TEST.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/USART_TEST.dir/rule
-.PHONY : tests/CMakeFiles/USART_TEST.dir/rule
+tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/rule
+.PHONY : tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/rule
 
 # Convenience name for target.
-USART_TEST: tests/CMakeFiles/USART_TEST.dir/rule
+firmwaresize_SOFT_USART_TEST.awk: tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/rule
 
-.PHONY : USART_TEST
+.PHONY : firmwaresize_SOFT_USART_TEST.awk
 
 # fast build rule for target.
-USART_TEST/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/USART_TEST.dir/build.make tests/CMakeFiles/USART_TEST.dir/build
-.PHONY : USART_TEST/fast
+firmwaresize_SOFT_USART_TEST.awk/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build
+.PHONY : firmwaresize_SOFT_USART_TEST.awk/fast
 
 # Convenience name for target.
-tests/CMakeFiles/get_status_USART_TEST.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/get_status_USART_TEST.dir/rule
-.PHONY : tests/CMakeFiles/get_status_USART_TEST.dir/rule
+tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-get_status_USART_TEST: tests/CMakeFiles/get_status_USART_TEST.dir/rule
+size_SOFT_USART_TEST: tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule
 
-.PHONY : get_status_USART_TEST
+.PHONY : size_SOFT_USART_TEST
 
 # fast build rule for target.
-get_status_USART_TEST/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/get_status_USART_TEST.dir/build.make tests/CMakeFiles/get_status_USART_TEST.dir/build
-.PHONY : get_status_USART_TEST/fast
+size_SOFT_USART_TEST/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/size_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/size_SOFT_USART_TEST.dir/build
+.PHONY : size_SOFT_USART_TEST/fast
 
 # Convenience name for target.
-tests/CMakeFiles/USART_TEST.elf.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/USART_TEST.elf.dir/rule
-.PHONY : tests/CMakeFiles/USART_TEST.elf.dir/rule
+tests/CMakeFiles/SOFT_USART_TEST.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/SOFT_USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-USART_TEST.elf: tests/CMakeFiles/USART_TEST.elf.dir/rule
+SOFT_USART_TEST: tests/CMakeFiles/SOFT_USART_TEST.dir/rule
 
-.PHONY : USART_TEST.elf
+.PHONY : SOFT_USART_TEST
 
 # fast build rule for target.
-USART_TEST.elf/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/build
-.PHONY : USART_TEST.elf/fast
+SOFT_USART_TEST/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.dir/build
+.PHONY : SOFT_USART_TEST/fast
 
 # Convenience name for target.
-tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/rule
-.PHONY : tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/rule
+tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-firmwaresize_USART_TEST.awk: tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/rule
+upload_SOFT_USART_TEST: tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule
 
-.PHONY : firmwaresize_USART_TEST.awk
+.PHONY : upload_SOFT_USART_TEST
 
 # fast build rule for target.
-firmwaresize_USART_TEST.awk/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build
-.PHONY : firmwaresize_USART_TEST.awk/fast
+upload_SOFT_USART_TEST/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build
+.PHONY : upload_SOFT_USART_TEST/fast
 
 # Convenience name for target.
-tests/CMakeFiles/upload_USART_TEST.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_USART_TEST.dir/rule
-.PHONY : tests/CMakeFiles/upload_USART_TEST.dir/rule
+tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule
 
 # Convenience name for target.
-upload_USART_TEST: tests/CMakeFiles/upload_USART_TEST.dir/rule
+SOFT_USART_TEST.elf: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule
 
-.PHONY : upload_USART_TEST
+.PHONY : SOFT_USART_TEST.elf
 
 # fast build rule for target.
-upload_USART_TEST/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/upload_USART_TEST.dir/build.make tests/CMakeFiles/upload_USART_TEST.dir/build
-.PHONY : upload_USART_TEST/fast
+SOFT_USART_TEST.elf/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build
+.PHONY : SOFT_USART_TEST.elf/fast
 
 # Convenience name for target.
-tests/CMakeFiles/upload_eeprom_USART_TEST.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_eeprom_USART_TEST.dir/rule
-.PHONY : tests/CMakeFiles/upload_eeprom_USART_TEST.dir/rule
+tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-upload_eeprom_USART_TEST: tests/CMakeFiles/upload_eeprom_USART_TEST.dir/rule
+upload_eeprom_SOFT_USART_TEST: tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule
 
-.PHONY : upload_eeprom_USART_TEST
+.PHONY : upload_eeprom_SOFT_USART_TEST
 
 # fast build rule for target.
-upload_eeprom_USART_TEST/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build
-.PHONY : upload_eeprom_USART_TEST/fast
+upload_eeprom_SOFT_USART_TEST/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build
+.PHONY : upload_eeprom_SOFT_USART_TEST/fast
 
 # Convenience name for target.
-tests/CMakeFiles/size_USART_TEST.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/size_USART_TEST.dir/rule
-.PHONY : tests/CMakeFiles/size_USART_TEST.dir/rule
+tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-size_USART_TEST: tests/CMakeFiles/size_USART_TEST.dir/rule
+get_status_SOFT_USART_TEST: tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/rule
 
-.PHONY : size_USART_TEST
+.PHONY : get_status_SOFT_USART_TEST
 
 # fast build rule for target.
-size_USART_TEST/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/size_USART_TEST.dir/build.make tests/CMakeFiles/size_USART_TEST.dir/build
-.PHONY : size_USART_TEST/fast
+get_status_SOFT_USART_TEST/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build
+.PHONY : get_status_SOFT_USART_TEST/fast
 
 # Convenience name for target.
-tests/CMakeFiles/disassemble_USART_TEST.dir/rule:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/disassemble_USART_TEST.dir/rule
-.PHONY : tests/CMakeFiles/disassemble_USART_TEST.dir/rule
+tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-disassemble_USART_TEST: tests/CMakeFiles/disassemble_USART_TEST.dir/rule
+disassemble_SOFT_USART_TEST: tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule
 
-.PHONY : disassemble_USART_TEST
+.PHONY : disassemble_SOFT_USART_TEST
 
 # fast build rule for target.
-disassemble_USART_TEST/fast:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/disassemble_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_USART_TEST.dir/build
-.PHONY : disassemble_USART_TEST/fast
+disassemble_SOFT_USART_TEST/fast:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build
+.PHONY : disassemble_SOFT_USART_TEST/fast
 
-usart_test.o: usart_test.c.o
+soft_usart_test.o: soft_usart_test.c.o
 
-.PHONY : usart_test.o
+.PHONY : soft_usart_test.o
 
 # target to build an object file
-usart_test.c.o:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/usart_test.c.o
-.PHONY : usart_test.c.o
+soft_usart_test.c.o:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+.PHONY : soft_usart_test.c.o
 
-usart_test.i: usart_test.c.i
+soft_usart_test.i: soft_usart_test.c.i
 
-.PHONY : usart_test.i
+.PHONY : soft_usart_test.i
 
 # target to preprocess a source file
-usart_test.c.i:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/usart_test.c.i
-.PHONY : usart_test.c.i
+soft_usart_test.c.i:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.i
+.PHONY : soft_usart_test.c.i
 
-usart_test.s: usart_test.c.s
+soft_usart_test.s: soft_usart_test.c.s
 
-.PHONY : usart_test.s
+.PHONY : soft_usart_test.s
 
 # target to generate assembly for a file
-usart_test.c.s:
-	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/usart_test.c.s
-.PHONY : usart_test.c.s
+soft_usart_test.c.s:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.s
+.PHONY : soft_usart_test.c.s
 
 # Help Target
 help:
@@ -265,17 +265,17 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... USART_TEST"
-	@echo "... get_status_USART_TEST"
-	@echo "... USART_TEST.elf"
-	@echo "... firmwaresize_USART_TEST.awk"
-	@echo "... upload_USART_TEST"
-	@echo "... upload_eeprom_USART_TEST"
-	@echo "... size_USART_TEST"
-	@echo "... disassemble_USART_TEST"
-	@echo "... usart_test.o"
-	@echo "... usart_test.i"
-	@echo "... usart_test.s"
+	@echo "... firmwaresize_SOFT_USART_TEST.awk"
+	@echo "... size_SOFT_USART_TEST"
+	@echo "... SOFT_USART_TEST"
+	@echo "... upload_SOFT_USART_TEST"
+	@echo "... SOFT_USART_TEST.elf"
+	@echo "... upload_eeprom_SOFT_USART_TEST"
+	@echo "... get_status_SOFT_USART_TEST"
+	@echo "... disassemble_SOFT_USART_TEST"
+	@echo "... soft_usart_test.o"
+	@echo "... soft_usart_test.i"
+	@echo "... soft_usart_test.s"
 .PHONY : help
 
 

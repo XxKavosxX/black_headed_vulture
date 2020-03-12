@@ -7,7 +7,9 @@
     Created on:
        10 Mar 2020
 */
+
 #include "adc.h"
+
 uint8_t state = 0;
 
 void adc_enable(uint8_t mode, uint8_t channel, uint8_t prescaler)
@@ -15,17 +17,21 @@ void adc_enable(uint8_t mode, uint8_t channel, uint8_t prescaler)
     if (adc_mode(mode) & adc_select_channel(channel) & adc_select_clk_freq(prescaler))
         state = 1;
 }
+
 _Bool adc_get_status()
 {
     return state;
 }
+
 _Bool adc_mode(uint8_t mode)
 {
-    // MODES
-    // 0 0  AREF, internal reference voltage off
-    // 0 1  AVCC, need to employ a capacitor between GND and AREFF
-    // 1 0  RESERVED
-    // 1 1  1.1v internal voltage as reference. Need to employ a capacitor between GND and AREFF
+    /* 
+        MODES
+        0 0  AREF, internal reference voltage off
+        0 1  AVCC, need to employ a capacitor between GND and AREFF
+        1 0  RESERVED
+        1 1  1.1v internal voltage as reference. Need to employ a capacitor between GND and AREFF 
+    */
 
     ADMUX = 0x00;
     if (!(mode >= 0 && mode <= 3 && mode != 2))
@@ -61,7 +67,8 @@ char adc_read()
         ;
     return (ADCH);
 }
-char adc_read_internal_temp(){
+char adc_read_internal_temp()
+{
     ADCSRA = 0x00;
     ADCSRA = (1 << ADEN) | (0x08);
     adc_read();

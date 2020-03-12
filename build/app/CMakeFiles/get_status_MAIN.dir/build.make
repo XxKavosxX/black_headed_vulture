@@ -55,7 +55,7 @@ include app/CMakeFiles/get_status_MAIN.dir/progress.make
 
 app/CMakeFiles/get_status_MAIN:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Get status from atmega328p"
-	cd /home/maike/Github/black_headed_vulture/build/app && avrdude -p atmega328p -c arduino -P /dev/ttyUSB0 -n -v
+	cd /home/maike/Github/black_headed_vulture/build/app && avrdude -p atmega328p -c arduino -P /dev/ttyACM0 -n -v
 
 get_status_MAIN: app/CMakeFiles/get_status_MAIN
 get_status_MAIN: app/CMakeFiles/get_status_MAIN.dir/build.make

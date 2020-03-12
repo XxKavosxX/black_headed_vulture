@@ -152,6 +152,33 @@ avr_libs/adc.c.s:
 	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/adc.c.s
 .PHONY : avr_libs/adc.c.s
 
+avr_libs/soft_usart.o: avr_libs/soft_usart.c.o
+
+.PHONY : avr_libs/soft_usart.o
+
+# target to build an object file
+avr_libs/soft_usart.c.o:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o
+.PHONY : avr_libs/soft_usart.c.o
+
+avr_libs/soft_usart.i: avr_libs/soft_usart.c.i
+
+.PHONY : avr_libs/soft_usart.i
+
+# target to preprocess a source file
+avr_libs/soft_usart.c.i:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.i
+.PHONY : avr_libs/soft_usart.c.i
+
+avr_libs/soft_usart.s: avr_libs/soft_usart.c.s
+
+.PHONY : avr_libs/soft_usart.s
+
+# target to generate assembly for a file
+avr_libs/soft_usart.c.s:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.s
+.PHONY : avr_libs/soft_usart.c.s
+
 avr_libs/usart.o: avr_libs/usart.c.o
 
 .PHONY : avr_libs/usart.o
@@ -191,6 +218,9 @@ help:
 	@echo "... avr_libs/adc.o"
 	@echo "... avr_libs/adc.i"
 	@echo "... avr_libs/adc.s"
+	@echo "... avr_libs/soft_usart.o"
+	@echo "... avr_libs/soft_usart.i"
+	@echo "... avr_libs/soft_usart.s"
 	@echo "... avr_libs/usart.o"
 	@echo "... avr_libs/usart.i"
 	@echo "... avr_libs/usart.s"

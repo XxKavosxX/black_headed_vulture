@@ -55,6 +55,7 @@ include app/CMakeFiles/MAIN.dir/progress.make
 
 app/CMakeFiles/MAIN: app/MAIN.hex
 app/CMakeFiles/MAIN: app/MAIN-eeprom.hex
+app/CMakeFiles/MAIN: app/MAIN.lss
 
 
 app/MAIN.hex: app/MAIN.elf
@@ -66,9 +67,14 @@ app/MAIN-eeprom.hex: app/MAIN.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating MAIN-eeprom.hex"
 	cd /home/maike/Github/black_headed_vulture/build/app && avr-objcopy -j .eeprom --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0 --no-change-warnings -O ihex MAIN.elf MAIN-eeprom.hex
 
+app/MAIN.lss: app/MAIN.elf
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating MAIN.lss"
+	cd /home/maike/Github/black_headed_vulture/build/app && avr-objdump -h -S --show-raw-insn MAIN.elf > MAIN.lss
+
 MAIN: app/CMakeFiles/MAIN
 MAIN: app/MAIN.hex
 MAIN: app/MAIN-eeprom.hex
+MAIN: app/MAIN.lss
 MAIN: app/CMakeFiles/MAIN.dir/build.make
 
 .PHONY : MAIN

@@ -1,9 +1,14 @@
 #include "usart.h"
 #include "util/delay.h"
-int main(){
-    while(1){
+int main()
+{
     usart_enable(MYUBRR);
-    usart_write_flash(PSTR("Hello USART!"));
-    _delay_ms(1000);
+    char data;
+    DDRB = 0xFF;
+    while (1)
+    {
+        data = usart_receive();
+        usart_send(data);
+        _delay_ms(10);
     }
 }

@@ -4,6 +4,7 @@
 #define __AVR_ATmega328P__
 #endif
 #define F_CPU 16000000UL // or whatever may be your frequency
+#define BAUD 9600
 #define __DELAY_BACKWARD_COMPATIBLE__
 #define __DELAY_ROUND_DOWN__
 
@@ -30,7 +31,7 @@
 #define get_low_bits(y) (y&0x0F)
 
 char *float2char(char *buffer, double d, int precision);
-char* int2char(int numero);
-char* long2char(uint32_t numero);
+char* int2char(int number);
+char* long2char(uint32_t number);
 
 #endif

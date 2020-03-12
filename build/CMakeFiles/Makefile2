@@ -84,7 +84,7 @@ src/preinstall:
 src/CMakeFiles/LIBS.dir/all:
 	$(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/depend
 	$(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=1,2,3 "Built target LIBS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=1,2,3,4 "Built target LIBS"
 .PHONY : src/CMakeFiles/LIBS.dir/all
 
 # Include target in all.
@@ -94,7 +94,7 @@ all: src/CMakeFiles/LIBS.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/LIBS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/LIBS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/LIBS.dir/rule
@@ -152,7 +152,7 @@ app/CMakeFiles/size_MAIN.dir/all: app/CMakeFiles/firmwaresize_MAIN.awk.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/size_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/size_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/size_MAIN.dir/rule
@@ -179,12 +179,12 @@ clean: app/CMakeFiles/size_MAIN.dir/clean
 app/CMakeFiles/MAIN.elf.dir/all: src/CMakeFiles/LIBS.dir/all
 	$(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/depend
 	$(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=6,7 "Built target MAIN.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=8,9 "Built target MAIN.elf"
 .PHONY : app/CMakeFiles/MAIN.elf.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/MAIN.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/MAIN.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/MAIN.elf.dir/rule
@@ -212,12 +212,12 @@ app/CMakeFiles/upload_MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 app/CMakeFiles/upload_MAIN.dir/all: app/CMakeFiles/firmwaresize_MAIN.awk.dir/all
 	$(MAKE) -f app/CMakeFiles/upload_MAIN.dir/build.make app/CMakeFiles/upload_MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/upload_MAIN.dir/build.make app/CMakeFiles/upload_MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=14,15 "Built target upload_MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=17,18 "Built target upload_MAIN"
 .PHONY : app/CMakeFiles/upload_MAIN.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/upload_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/upload_MAIN.dir/rule
@@ -244,12 +244,12 @@ clean: app/CMakeFiles/upload_MAIN.dir/clean
 app/CMakeFiles/upload_eeprom_MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 	$(MAKE) -f app/CMakeFiles/upload_eeprom_MAIN.dir/build.make app/CMakeFiles/upload_eeprom_MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/upload_eeprom_MAIN.dir/build.make app/CMakeFiles/upload_eeprom_MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=18,19 "Built target upload_eeprom_MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=21,22 "Built target upload_eeprom_MAIN"
 .PHONY : app/CMakeFiles/upload_eeprom_MAIN.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/upload_eeprom_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload_eeprom_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/upload_eeprom_MAIN.dir/rule
@@ -309,7 +309,7 @@ app/CMakeFiles/MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 app/CMakeFiles/MAIN.dir/all: app/CMakeFiles/firmwaresize_MAIN.awk.dir/all
 	$(MAKE) -f app/CMakeFiles/MAIN.dir/build.make app/CMakeFiles/MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/MAIN.dir/build.make app/CMakeFiles/MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=4,5 "Built target MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=5,6,7 "Built target MAIN"
 .PHONY : app/CMakeFiles/MAIN.dir/all
 
 # Include target in all.
@@ -319,7 +319,7 @@ all: app/CMakeFiles/MAIN.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/MAIN.dir/rule
@@ -351,7 +351,7 @@ app/CMakeFiles/disassemble_MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/disassemble_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/disassemble_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/disassemble_MAIN.dir/rule
@@ -378,7 +378,7 @@ clean: app/CMakeFiles/disassemble_MAIN.dir/clean
 app/CMakeFiles/get_status_MAIN.dir/all:
 	$(MAKE) -f app/CMakeFiles/get_status_MAIN.dir/build.make app/CMakeFiles/get_status_MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/get_status_MAIN.dir/build.make app/CMakeFiles/get_status_MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=12 "Built target get_status_MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=15 "Built target get_status_MAIN"
 .PHONY : app/CMakeFiles/get_status_MAIN.dir/all
 
 # Build rule for subdir invocation for target.
@@ -407,19 +407,19 @@ clean: app/CMakeFiles/get_status_MAIN.dir/clean
 # Directory level rules for directory tests
 
 # Convenience name for "all" pass in the directory.
-tests/all: tests/CMakeFiles/USART_TEST.dir/all
+tests/all: tests/CMakeFiles/SOFT_USART_TEST.dir/all
 
 .PHONY : tests/all
 
 # Convenience name for "clean" pass in the directory.
-tests/clean: tests/CMakeFiles/USART_TEST.dir/clean
-tests/clean: tests/CMakeFiles/get_status_USART_TEST.dir/clean
-tests/clean: tests/CMakeFiles/USART_TEST.elf.dir/clean
-tests/clean: tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/clean
-tests/clean: tests/CMakeFiles/upload_USART_TEST.dir/clean
-tests/clean: tests/CMakeFiles/upload_eeprom_USART_TEST.dir/clean
-tests/clean: tests/CMakeFiles/size_USART_TEST.dir/clean
-tests/clean: tests/CMakeFiles/disassemble_USART_TEST.dir/clean
+tests/clean: tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/clean
+tests/clean: tests/CMakeFiles/size_SOFT_USART_TEST.dir/clean
+tests/clean: tests/CMakeFiles/SOFT_USART_TEST.dir/clean
+tests/clean: tests/CMakeFiles/upload_SOFT_USART_TEST.dir/clean
+tests/clean: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/clean
+tests/clean: tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/clean
+tests/clean: tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/clean
+tests/clean: tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/clean
 
 .PHONY : tests/clean
 
@@ -429,266 +429,266 @@ tests/preinstall:
 .PHONY : tests/preinstall
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/USART_TEST.dir
+# Target rules for target tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir
 
 # All Build rule for target.
-tests/CMakeFiles/USART_TEST.dir/all: tests/CMakeFiles/USART_TEST.elf.dir/all
-tests/CMakeFiles/USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/all
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.dir/build.make tests/CMakeFiles/USART_TEST.dir/depend
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.dir/build.make tests/CMakeFiles/USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=8,9 "Built target USART_TEST"
-.PHONY : tests/CMakeFiles/USART_TEST.dir/all
+tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/all:
+	$(MAKE) -f tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/depend
+	$(MAKE) -f tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num= "Built target firmwaresize_SOFT_USART_TEST.awk"
+.PHONY : tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/rule
+
+# Convenience name for target.
+firmwaresize_SOFT_USART_TEST.awk: tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/rule
+
+.PHONY : firmwaresize_SOFT_USART_TEST.awk
+
+# clean rule for target.
+tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/clean
+.PHONY : tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/size_SOFT_USART_TEST.dir
+
+# All Build rule for target.
+tests/CMakeFiles/size_SOFT_USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/all
+tests/CMakeFiles/size_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
+	$(MAKE) -f tests/CMakeFiles/size_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/size_SOFT_USART_TEST.dir/depend
+	$(MAKE) -f tests/CMakeFiles/size_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/size_SOFT_USART_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num= "Built target size_SOFT_USART_TEST"
+.PHONY : tests/CMakeFiles/size_SOFT_USART_TEST.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/size_SOFT_USART_TEST.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule
+
+# Convenience name for target.
+size_SOFT_USART_TEST: tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule
+
+.PHONY : size_SOFT_USART_TEST
+
+# clean rule for target.
+tests/CMakeFiles/size_SOFT_USART_TEST.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/size_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/size_SOFT_USART_TEST.dir/clean
+.PHONY : tests/CMakeFiles/size_SOFT_USART_TEST.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/size_SOFT_USART_TEST.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/SOFT_USART_TEST.dir
+
+# All Build rule for target.
+tests/CMakeFiles/SOFT_USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/all
+tests/CMakeFiles/SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.dir/depend
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=10,11,12 "Built target SOFT_USART_TEST"
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.dir/all
 
 # Include target in all.
-all: tests/CMakeFiles/USART_TEST.dir/all
+all: tests/CMakeFiles/SOFT_USART_TEST.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/USART_TEST.dir/all
+tests/CMakeFiles/SOFT_USART_TEST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-USART_TEST: tests/CMakeFiles/USART_TEST.dir/rule
+SOFT_USART_TEST: tests/CMakeFiles/SOFT_USART_TEST.dir/rule
 
-.PHONY : USART_TEST
-
-# clean rule for target.
-tests/CMakeFiles/USART_TEST.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.dir/build.make tests/CMakeFiles/USART_TEST.dir/clean
-.PHONY : tests/CMakeFiles/USART_TEST.dir/clean
+.PHONY : SOFT_USART_TEST
 
 # clean rule for target.
-clean: tests/CMakeFiles/USART_TEST.dir/clean
+tests/CMakeFiles/SOFT_USART_TEST.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.dir/clean
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/SOFT_USART_TEST.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/get_status_USART_TEST.dir
+# Target rules for target tests/CMakeFiles/upload_SOFT_USART_TEST.dir
 
 # All Build rule for target.
-tests/CMakeFiles/get_status_USART_TEST.dir/all:
-	$(MAKE) -f tests/CMakeFiles/get_status_USART_TEST.dir/build.make tests/CMakeFiles/get_status_USART_TEST.dir/depend
-	$(MAKE) -f tests/CMakeFiles/get_status_USART_TEST.dir/build.make tests/CMakeFiles/get_status_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=13 "Built target get_status_USART_TEST"
-.PHONY : tests/CMakeFiles/get_status_USART_TEST.dir/all
+tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_SOFT_USART_TEST.awk.dir/all
+tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
+	$(MAKE) -f tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_SOFT_USART_TEST.dir/depend
+	$(MAKE) -f tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=19,20 "Built target upload_SOFT_USART_TEST"
+.PHONY : tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/get_status_USART_TEST.dir/rule: cmake_check_build_system
+tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule
+
+# Convenience name for target.
+upload_SOFT_USART_TEST: tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule
+
+.PHONY : upload_SOFT_USART_TEST
+
+# clean rule for target.
+tests/CMakeFiles/upload_SOFT_USART_TEST.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_SOFT_USART_TEST.dir/clean
+.PHONY : tests/CMakeFiles/upload_SOFT_USART_TEST.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/upload_SOFT_USART_TEST.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/SOFT_USART_TEST.elf.dir
+
+# All Build rule for target.
+tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all: src/CMakeFiles/LIBS.dir/all
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/depend
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=13,14 "Built target SOFT_USART_TEST.elf"
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule
+
+# Convenience name for target.
+SOFT_USART_TEST.elf: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule
+
+.PHONY : SOFT_USART_TEST.elf
+
+# clean rule for target.
+tests/CMakeFiles/SOFT_USART_TEST.elf.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/clean
+.PHONY : tests/CMakeFiles/SOFT_USART_TEST.elf.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir
+
+# All Build rule for target.
+tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
+	$(MAKE) -f tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/depend
+	$(MAKE) -f tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=23,24 "Built target upload_eeprom_SOFT_USART_TEST"
+.PHONY : tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule
+
+# Convenience name for target.
+upload_eeprom_SOFT_USART_TEST: tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule
+
+.PHONY : upload_eeprom_SOFT_USART_TEST
+
+# clean rule for target.
+tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/clean
+.PHONY : tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/get_status_SOFT_USART_TEST.dir
+
+# All Build rule for target.
+tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/all:
+	$(MAKE) -f tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/depend
+	$(MAKE) -f tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=16 "Built target get_status_SOFT_USART_TEST"
+.PHONY : tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/get_status_USART_TEST.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/get_status_USART_TEST.dir/rule
+.PHONY : tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-get_status_USART_TEST: tests/CMakeFiles/get_status_USART_TEST.dir/rule
+get_status_SOFT_USART_TEST: tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/rule
 
-.PHONY : get_status_USART_TEST
-
-# clean rule for target.
-tests/CMakeFiles/get_status_USART_TEST.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/get_status_USART_TEST.dir/build.make tests/CMakeFiles/get_status_USART_TEST.dir/clean
-.PHONY : tests/CMakeFiles/get_status_USART_TEST.dir/clean
+.PHONY : get_status_SOFT_USART_TEST
 
 # clean rule for target.
-clean: tests/CMakeFiles/get_status_USART_TEST.dir/clean
+tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/clean
+.PHONY : tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/USART_TEST.elf.dir
+# Target rules for target tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir
 
 # All Build rule for target.
-tests/CMakeFiles/USART_TEST.elf.dir/all: src/CMakeFiles/LIBS.dir/all
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/depend
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=10,11 "Built target USART_TEST.elf"
-.PHONY : tests/CMakeFiles/USART_TEST.elf.dir/all
+tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
+	$(MAKE) -f tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/depend
+	$(MAKE) -f tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num= "Built target disassemble_SOFT_USART_TEST"
+.PHONY : tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/USART_TEST.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/USART_TEST.elf.dir/all
+tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/USART_TEST.elf.dir/rule
+.PHONY : tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule
 
 # Convenience name for target.
-USART_TEST.elf: tests/CMakeFiles/USART_TEST.elf.dir/rule
+disassemble_SOFT_USART_TEST: tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule
 
-.PHONY : USART_TEST.elf
-
-# clean rule for target.
-tests/CMakeFiles/USART_TEST.elf.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/USART_TEST.elf.dir/build.make tests/CMakeFiles/USART_TEST.elf.dir/clean
-.PHONY : tests/CMakeFiles/USART_TEST.elf.dir/clean
+.PHONY : disassemble_SOFT_USART_TEST
 
 # clean rule for target.
-clean: tests/CMakeFiles/USART_TEST.elf.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir
-
-# All Build rule for target.
-tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/all:
-	$(MAKE) -f tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/depend
-	$(MAKE) -f tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num= "Built target firmwaresize_USART_TEST.awk"
-.PHONY : tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/rule
-
-# Convenience name for target.
-firmwaresize_USART_TEST.awk: tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/rule
-
-.PHONY : firmwaresize_USART_TEST.awk
+tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/clean
+.PHONY : tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/clean
 
 # clean rule for target.
-tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/build.make tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/clean
-.PHONY : tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/clean
-
-# clean rule for target.
-clean: tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/upload_USART_TEST.dir
-
-# All Build rule for target.
-tests/CMakeFiles/upload_USART_TEST.dir/all: tests/CMakeFiles/USART_TEST.elf.dir/all
-tests/CMakeFiles/upload_USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/all
-	$(MAKE) -f tests/CMakeFiles/upload_USART_TEST.dir/build.make tests/CMakeFiles/upload_USART_TEST.dir/depend
-	$(MAKE) -f tests/CMakeFiles/upload_USART_TEST.dir/build.make tests/CMakeFiles/upload_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=16,17 "Built target upload_USART_TEST"
-.PHONY : tests/CMakeFiles/upload_USART_TEST.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/upload_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_USART_TEST.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/upload_USART_TEST.dir/rule
-
-# Convenience name for target.
-upload_USART_TEST: tests/CMakeFiles/upload_USART_TEST.dir/rule
-
-.PHONY : upload_USART_TEST
-
-# clean rule for target.
-tests/CMakeFiles/upload_USART_TEST.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/upload_USART_TEST.dir/build.make tests/CMakeFiles/upload_USART_TEST.dir/clean
-.PHONY : tests/CMakeFiles/upload_USART_TEST.dir/clean
-
-# clean rule for target.
-clean: tests/CMakeFiles/upload_USART_TEST.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/upload_eeprom_USART_TEST.dir
-
-# All Build rule for target.
-tests/CMakeFiles/upload_eeprom_USART_TEST.dir/all: tests/CMakeFiles/USART_TEST.elf.dir/all
-	$(MAKE) -f tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_USART_TEST.dir/depend
-	$(MAKE) -f tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=20,21 "Built target upload_eeprom_USART_TEST"
-.PHONY : tests/CMakeFiles/upload_eeprom_USART_TEST.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/upload_eeprom_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_eeprom_USART_TEST.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/upload_eeprom_USART_TEST.dir/rule
-
-# Convenience name for target.
-upload_eeprom_USART_TEST: tests/CMakeFiles/upload_eeprom_USART_TEST.dir/rule
-
-.PHONY : upload_eeprom_USART_TEST
-
-# clean rule for target.
-tests/CMakeFiles/upload_eeprom_USART_TEST.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/upload_eeprom_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_USART_TEST.dir/clean
-.PHONY : tests/CMakeFiles/upload_eeprom_USART_TEST.dir/clean
-
-# clean rule for target.
-clean: tests/CMakeFiles/upload_eeprom_USART_TEST.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/size_USART_TEST.dir
-
-# All Build rule for target.
-tests/CMakeFiles/size_USART_TEST.dir/all: tests/CMakeFiles/USART_TEST.elf.dir/all
-tests/CMakeFiles/size_USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_USART_TEST.awk.dir/all
-	$(MAKE) -f tests/CMakeFiles/size_USART_TEST.dir/build.make tests/CMakeFiles/size_USART_TEST.dir/depend
-	$(MAKE) -f tests/CMakeFiles/size_USART_TEST.dir/build.make tests/CMakeFiles/size_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num= "Built target size_USART_TEST"
-.PHONY : tests/CMakeFiles/size_USART_TEST.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/size_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/size_USART_TEST.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/size_USART_TEST.dir/rule
-
-# Convenience name for target.
-size_USART_TEST: tests/CMakeFiles/size_USART_TEST.dir/rule
-
-.PHONY : size_USART_TEST
-
-# clean rule for target.
-tests/CMakeFiles/size_USART_TEST.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/size_USART_TEST.dir/build.make tests/CMakeFiles/size_USART_TEST.dir/clean
-.PHONY : tests/CMakeFiles/size_USART_TEST.dir/clean
-
-# clean rule for target.
-clean: tests/CMakeFiles/size_USART_TEST.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/disassemble_USART_TEST.dir
-
-# All Build rule for target.
-tests/CMakeFiles/disassemble_USART_TEST.dir/all: tests/CMakeFiles/USART_TEST.elf.dir/all
-	$(MAKE) -f tests/CMakeFiles/disassemble_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_USART_TEST.dir/depend
-	$(MAKE) -f tests/CMakeFiles/disassemble_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num= "Built target disassemble_USART_TEST"
-.PHONY : tests/CMakeFiles/disassemble_USART_TEST.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/disassemble_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/disassemble_USART_TEST.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/disassemble_USART_TEST.dir/rule
-
-# Convenience name for target.
-disassemble_USART_TEST: tests/CMakeFiles/disassemble_USART_TEST.dir/rule
-
-.PHONY : disassemble_USART_TEST
-
-# clean rule for target.
-tests/CMakeFiles/disassemble_USART_TEST.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/disassemble_USART_TEST.dir/build.make tests/CMakeFiles/disassemble_USART_TEST.dir/clean
-.PHONY : tests/CMakeFiles/disassemble_USART_TEST.dir/clean
-
-# clean rule for target.
-clean: tests/CMakeFiles/disassemble_USART_TEST.dir/clean
+clean: tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/clean
 
 .PHONY : clean
 

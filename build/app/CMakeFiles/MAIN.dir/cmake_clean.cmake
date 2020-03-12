@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MAIN"
   "MAIN.hex"
   "MAIN-eeprom.hex"
+  "MAIN.lss"
 )
 
 # Per-language clean rules from dependency scanning.
