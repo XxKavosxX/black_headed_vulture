@@ -3,5 +3,6 @@
 
 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o: ../tests/../src/avr_libs/definitions.h
 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o: ../tests/../src/avr_libs/soft_usart.h
+tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o: ../tests/../src/avr_libs/usart.h
 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o: ../tests/soft_usart_test.c
 

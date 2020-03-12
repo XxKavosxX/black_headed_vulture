@@ -45,6 +45,8 @@ stdio.h
 /home/maike/Github/black_headed_vulture/src/avr_libs/soft_usart.c
 soft_usart.h
 /home/maike/Github/black_headed_vulture/src/avr_libs/soft_usart.h
+usart.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/usart.h
 
 /home/maike/Github/black_headed_vulture/src/avr_libs/soft_usart.h
 definitions.h
