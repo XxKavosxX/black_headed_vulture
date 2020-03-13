@@ -1,12 +1,17 @@
 Archive member included to satisfy reference by file (symbol)
 
 ../src/libLIBS.a(soft_usart.c.o)
-                              CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o (set_rx)
+                              CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o (softuart_get_heap)
 ../src/libLIBS.a(usart.c.o)   CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o (usart_enable)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
                               /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o (exit)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
                               ../src/libLIBS.a(soft_usart.c.o) (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+rx_buffer           0x96              ../src/libLIBS.a(soft_usart.c.o)
 
 Discarded input sections
 
@@ -16,19 +21,23 @@ Discarded input sections
  .data          0x0000000000000000        0x0 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
  .bss           0x0000000000000000        0x0 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
  .text.test_send
-                0x0000000000000000       0x4a CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+                0x0000000000000000       0x50 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+ .text.test_recv
+                0x0000000000000000       0x28 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
  .text          0x0000000000000000        0x0 ../src/libLIBS.a(soft_usart.c.o)
  .data          0x0000000000000000        0x0 ../src/libLIBS.a(soft_usart.c.o)
  .bss           0x0000000000000000        0x0 ../src/libLIBS.a(soft_usart.c.o)
- .text.send_char
+ .text.softuart_send_char
                 0x0000000000000000       0xee ../src/libLIBS.a(soft_usart.c.o)
+ .text.softuart_recv
+                0x0000000000000000       0xe2 ../src/libLIBS.a(soft_usart.c.o)
+ .text._populate_buffer
+                0x0000000000000000       0x52 ../src/libLIBS.a(soft_usart.c.o)
  .text          0x0000000000000000        0x0 ../src/libLIBS.a(usart.c.o)
  .data          0x0000000000000000        0x0 ../src/libLIBS.a(usart.c.o)
  .bss           0x0000000000000000        0x0 ../src/libLIBS.a(usart.c.o)
  .text.usart_receive
                 0x0000000000000000        0xe ../src/libLIBS.a(usart.c.o)
- .text.usart_write
-                0x0000000000000000       0x1e ../src/libLIBS.a(usart.c.o)
  .text.usart_write_flash
                 0x0000000000000000       0x20 ../src/libLIBS.a(usart.c.o)
  .text.usar_flush
@@ -188,7 +197,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x1b4
+.text           0x0000000000000000      0x25a
  *(.vectors)
  .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000000                __vectors
@@ -272,36 +281,41 @@ END GROUP
                 0x0000000000000088                __vector_20
                 0x000000000000008a                . = ALIGN (0x2)
  *(.text.*)
- .text.test_recv
-                0x000000000000008a       0x1c CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
-                0x000000000000008a                test_recv
+ .text.test_recv2
+                0x000000000000008a       0x3c CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+                0x000000000000008a                test_recv2
  .text.startup.main
-                0x00000000000000a6        0x2 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
-                0x00000000000000a6                main
- .text.set_rx   0x00000000000000a8        0x6 ../src/libLIBS.a(soft_usart.c.o)
-                0x00000000000000a8                set_rx
- .text.set_tx   0x00000000000000ae        0x6 ../src/libLIBS.a(soft_usart.c.o)
-                0x00000000000000ae                set_tx
- .text.recv_char
-                0x00000000000000b4       0x8c ../src/libLIBS.a(soft_usart.c.o)
-                0x00000000000000b4                recv_char
- .text.enable_soft_usart_recv
-                0x0000000000000140       0x18 ../src/libLIBS.a(soft_usart.c.o)
-                0x0000000000000140                enable_soft_usart_recv
+                0x00000000000000c6        0x2 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+                0x00000000000000c6                main
+ .text.softuart_get_heap
+                0x00000000000000c8        0x8 ../src/libLIBS.a(soft_usart.c.o)
+                0x00000000000000c8                softuart_get_heap
+ .text.softuart_get_buffer
+                0x00000000000000d0        0xe ../src/libLIBS.a(soft_usart.c.o)
+                0x00000000000000d0                softuart_get_buffer
+ .text.softuart_config
+                0x00000000000000de        0xa ../src/libLIBS.a(soft_usart.c.o)
+                0x00000000000000de                softuart_config
+ .text.softuart_enable_recv
+                0x00000000000000e8       0x18 ../src/libLIBS.a(soft_usart.c.o)
+                0x00000000000000e8                softuart_enable_recv
  .text.__vector_5
-                0x0000000000000158       0x2c ../src/libLIBS.a(soft_usart.c.o)
-                0x0000000000000158                __vector_5
+                0x0000000000000100      0x10c ../src/libLIBS.a(soft_usart.c.o)
+                0x0000000000000100                __vector_5
  .text.usart_enable
-                0x0000000000000184       0x1e ../src/libLIBS.a(usart.c.o)
-                0x0000000000000184                usart_enable
+                0x000000000000020c       0x1e ../src/libLIBS.a(usart.c.o)
+                0x000000000000020c                usart_enable
  .text.usart_send
-                0x00000000000001a2        0xe ../src/libLIBS.a(usart.c.o)
-                0x00000000000001a2                usart_send
-                0x00000000000001b0                . = ALIGN (0x2)
+                0x000000000000022a        0xe ../src/libLIBS.a(usart.c.o)
+                0x000000000000022a                usart_send
+ .text.usart_write
+                0x0000000000000238       0x1e ../src/libLIBS.a(usart.c.o)
+                0x0000000000000238                usart_write
+                0x0000000000000256                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000000000001b0        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x00000000000001b0                exit
-                0x00000000000001b0                _exit
+ .fini9         0x0000000000000256        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x0000000000000256                exit
+                0x0000000000000256                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -320,11 +334,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000000000001b0        0x4 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000000256        0x4 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x00000000000001b4                _etext = .
+                0x000000000000025a                _etext = .
 
-.data           0x0000000000800100        0x0 load address 0x00000000000001b4
+.data           0x0000000000800100        0x0 load address 0x000000000000025a
                 [!provide]                        PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -335,23 +349,27 @@ END GROUP
                 0x0000000000800100                _edata = .
                 [!provide]                        PROVIDE (__data_end, .)
 
-.bss            0x0000000000800100        0x1
+.bss            0x0000000000800100       0x98
                 0x0000000000800100                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.is_listening
-                0x0000000000800100        0x1 ../src/libLIBS.a(soft_usart.c.o)
-                0x0000000000800100                is_listening
+ .bss.n         0x0000000000800100        0x1 ../src/libLIBS.a(soft_usart.c.o)
+                0x0000000000800100                n
+ .bss.rx_listening
+                0x0000000000800101        0x1 ../src/libLIBS.a(soft_usart.c.o)
+                0x0000000000800101                rx_listening
  *(COMMON)
-                0x0000000000800101                PROVIDE (__bss_end, .)
-                0x00000000000001b4                __data_load_start = LOADADDR (.data)
-                0x00000000000001b4                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0000000000800102       0x96 ../src/libLIBS.a(soft_usart.c.o)
+                0x0000000000800102                rx_buffer
+                0x0000000000800198                PROVIDE (__bss_end, .)
+                0x000000000000025a                __data_load_start = LOADADDR (.data)
+                0x000000000000025a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0000000000800101        0x0
+.noinit         0x0000000000800198        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                        PROVIDE (__noinit_end, .)
-                0x0000000000800101                _end = .
+                0x0000000000800198                _end = .
                 [!provide]                        PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
@@ -373,14 +391,14 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000      0x6fc
+.stab           0x0000000000000000      0x75c
  *(.stab)
- .stab          0x0000000000000000      0x6fc CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
-                                        0x834 (size before relaxing)
+ .stab          0x0000000000000000      0x75c CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+                                        0x93c (size before relaxing)
 
-.stabstr        0x0000000000000000     0x10a5
+.stabstr        0x0000000000000000     0x10b8
  *(.stabstr)
- .stabstr       0x0000000000000000     0x10a5 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
+ .stabstr       0x0000000000000000     0x10b8 CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o
 
 .stab.excl
  *(.stab.excl)

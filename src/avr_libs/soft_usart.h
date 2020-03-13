@@ -2,13 +2,15 @@
 #define __SOFT_USART_H__
 #include "definitions.h"
 
-#define _pulse_clock_rising() { _delay_us(1); _clr_bit(PORTD, CLOCK_PIN); _delay_us(1); }
-#define _pulse_clock_falling() { _delay_us(1); _set_bit(PORTD, CLOCK_PIN); _delay_us(1); }
-void set_rx();
-void set_tx();
-void send_char(const uint8_t byte);
-uint8_t recv_char(void);
-void recv_char_test(void);
-void enable_soft_usart_recv();
+//void _populate_buffer(uint8_t byte);
+void softuart_config(uint8_t rx_pin, uint8_t tx_pin);
+void softuart_enable_recv();
+
+char *softuart_get_buffer();
+char softuart_get_heap();
+
+uint8_t softuart_recv(void);
+void softuart_send_char(const uint8_t byte);
+
 #endif
 
