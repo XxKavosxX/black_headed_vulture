@@ -3,11 +3,12 @@
 #include "usart.h"
 int main()
 {
-    test_recv2();
+    test_read();
 }
 
-void test_send(){
-    softuart_config(2,3);
+void test_send()
+{
+    softuart_config(2, 3);
     while (1)
     {
         send_char('A');
@@ -18,29 +19,43 @@ void test_send(){
         _delay_ms(1000);
     }
 }
-void test_recv(){
+void test_recv()
+{
 
-    softuart_config(2,3);
+    softuart_config(2, 3);
     softuart_enable_recv();
     usart_enable(MYUBRR);
-    uint8_t data=0;
+    uint8_t data = 0;
     while (1)
     {
-        data = softuart_recv();
         usart_send(data);
         _delay_ms(10);
     }
 }
-void test_recv2(){
+void test_read()
+{
 
-    softuart_config(2,3);
+    softuart_config(2, 3);
     softuart_enable_recv();
     usart_enable(MYUBRR);
+    uint8_t d = 0;
     while (1)
     {
-        usart_write(softuart_get_buffer());
+        usart_write(softuart_read());
         _delay_ms(500);
-        usart_send(softuart_get_heap);
+    }
+}
+
+void test_write()
+{
+
+    softuart_config(2, 3);
+    softuart_enable_recv();
+    usart_enable(MYUBRR);
+    uint8_t d = 0;
+    while (1)
+    {
+        softuart_write("Hello Softuart!");
         _delay_ms(500);
     }
 }
