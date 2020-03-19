@@ -3,20 +3,6 @@
 
 #include "definitions.h"
 
-                                                                                /* 
-Assyncronous mode
-    UBRR0 = (F_CPU/(16*BAUD)) - 1
-Assyncronous duplex velocity
-    UBRR0 = (F_CPU/(8*BAUD)) -1)
-Syncrono Master Mode
-    UBRR0 = (F_CPU/(2*BAUD)) -1)                                                    */
-#ifndef MYUBRR
-#define MYUBRR F_CPU / 16 / BAUD - 1
-#endif
-
-#define vector_size 5
-#define conv_ascii 48
-
 void usart_enable(uint16_t ubrr);
 void usart_send(unsigned char dado);
 unsigned char usart_receive();

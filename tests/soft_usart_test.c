@@ -3,7 +3,7 @@
 #include "usart.h"
 int main()
 {
-    test_read();
+    test_write();
 }
 
 void test_send()
@@ -42,7 +42,7 @@ void test_read()
     while (1)
     {
         usart_write(softuart_read());
-        _delay_ms(500);
+        _delay_ms(2000);
     }
 }
 
@@ -55,7 +55,7 @@ void test_write()
     uint8_t d = 0;
     while (1)
     {
-        softuart_write("Hello Softuart!");
+        softuart_send_char('a');
         _delay_ms(500);
     }
 }

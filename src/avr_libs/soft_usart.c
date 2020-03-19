@@ -21,7 +21,7 @@
 Time to send one bit in us
 9200 bps
 19200 bps start, mid, stop: BIT_DELAY, BIT_DELAY, 20             */
-#define BIT_DELAY (1000000 / 19200)
+#define BIT_DELAY (1000000 / BAUD)
 
 volatile bool rx_listening = false;
 
@@ -123,7 +123,7 @@ void softuart_recv(void)
     /*
     At 19200 bps start, mid, stop: BIT_DELAY, BIT_DELAY, 20 works fine.
     Theese magical number (20) achieved by trial and error                  */
-    _delay_us(20); //stop bit delay
+    _delay_us(BIT_DELAY); //stop bit delay
     _populate_buffer(byte);
 
     set_bit(PCMSK2, RX);  //enable interrupt on RX
