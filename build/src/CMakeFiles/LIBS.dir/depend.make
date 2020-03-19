@@ -9,6 +9,10 @@ src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: ../src/avr_libs/definitions.h
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: ../src/avr_libs/soft_usart.c
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: ../src/avr_libs/soft_usart.h
 
+src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o: ../src/avr_libs/definitions.h
+src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o: ../src/avr_libs/twi.c
+src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o: ../src/avr_libs/twi.h
+
 src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/definitions.h
 src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/usart.c
 src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/usart.h

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LIBS.dir/avr_libs/adc.c.o"
   "CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o"
+  "CMakeFiles/LIBS.dir/avr_libs/twi.c.o"
   "CMakeFiles/LIBS.dir/avr_libs/usart.c.o"
   "libLIBS.pdb"
   "libLIBS.a"

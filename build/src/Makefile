@@ -179,6 +179,33 @@ avr_libs/soft_usart.c.s:
 	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.s
 .PHONY : avr_libs/soft_usart.c.s
 
+avr_libs/twi.o: avr_libs/twi.c.o
+
+.PHONY : avr_libs/twi.o
+
+# target to build an object file
+avr_libs/twi.c.o:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o
+.PHONY : avr_libs/twi.c.o
+
+avr_libs/twi.i: avr_libs/twi.c.i
+
+.PHONY : avr_libs/twi.i
+
+# target to preprocess a source file
+avr_libs/twi.c.i:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/twi.c.i
+.PHONY : avr_libs/twi.c.i
+
+avr_libs/twi.s: avr_libs/twi.c.s
+
+.PHONY : avr_libs/twi.s
+
+# target to generate assembly for a file
+avr_libs/twi.c.s:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/twi.c.s
+.PHONY : avr_libs/twi.c.s
+
 avr_libs/usart.o: avr_libs/usart.c.o
 
 .PHONY : avr_libs/usart.o
@@ -221,6 +248,9 @@ help:
 	@echo "... avr_libs/soft_usart.o"
 	@echo "... avr_libs/soft_usart.i"
 	@echo "... avr_libs/soft_usart.s"
+	@echo "... avr_libs/twi.o"
+	@echo "... avr_libs/twi.i"
+	@echo "... avr_libs/twi.s"
 	@echo "... avr_libs/usart.o"
 	@echo "... avr_libs/usart.i"
 	@echo "... avr_libs/usart.s"

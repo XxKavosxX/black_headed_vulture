@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/maike/Github/black_headed_vulture/src/avr_libs/adc.c" "/home/maike/Github/black_headed_vulture/build/src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o"
   "/home/maike/Github/black_headed_vulture/src/avr_libs/soft_usart.c" "/home/maike/Github/black_headed_vulture/build/src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o"
+  "/home/maike/Github/black_headed_vulture/src/avr_libs/twi.c" "/home/maike/Github/black_headed_vulture/build/src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o"
   "/home/maike/Github/black_headed_vulture/src/avr_libs/usart.c" "/home/maike/Github/black_headed_vulture/build/src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
