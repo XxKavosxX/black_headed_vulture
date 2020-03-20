@@ -27,13 +27,13 @@
 
 unsigned char new_data;
 uint8_t new_addr;
-volatile uint8_t bus_busy = NOT_BUSY;
+volatile uint8_t bus_stt = NOT_BUSY;
 volatile uint8_t iter = 0;
 volatile uint8_t step = 0;
 
 bool twi_status()
 {
-    return bus_busy;
+    return bus_stt;
 }
 void twi_enable_pull_ups(void)
 {
@@ -67,6 +67,7 @@ _Bool twi_write(unsigned char addr, unsigned char data)
     iter = 0;
     new_data = data;
     new_addr = (addr << 1);
+
     _send_start_cond();
     step = 1;
 
@@ -74,41 +75,34 @@ _Bool twi_write(unsigned char addr, unsigned char data)
     {
 
         _delay_us(25);
-    } while ((bus_busy == BUSY) || (step < 2));
+    } while ((bus_stt == BUSY) || (step < 2));
 
     if (step == 4)
-    {
         return true;
-    }
     return false;
 }
 unsigned char twi_read(unsigned char addr)
 {
 
-    if (bus_busy != NOT_BUSY)
+    if (bus_stt == BUSY)
         return INVALID_RETURN;
 
     iter = 0;
     new_data = 0x00;
     new_addr = (addr << 1) + 1;
+
     _send_start_cond();
     step = 1;
 
     do
     {
         _delay_us(25);
-    } while ((bus_busy == BUSY) || (step < 2));
+    } while ((bus_stt == BUSY) || (step < 2)); //Wait for complete reading
 
     if (step == 4)
-    {
-
         return new_data;
-    }
     else
-    {
-
         return INVALID_RETURN;
-    }
 }
 
 ISR(TWI_vect)
@@ -118,7 +112,7 @@ ISR(TWI_vect)
     {
     case TW_START:
 
-        bus_busy = BUSY;
+        bus_stt = BUSY;
         iter++;
         step = 2;
         TWDR = new_addr;
@@ -142,7 +136,7 @@ ISR(TWI_vect)
         else
         {
             _send_stop_cond();
-            bus_busy = NOT_BUSY;
+            bus_stt = NOT_BUSY;
         }
         break;
 
@@ -151,7 +145,7 @@ ISR(TWI_vect)
         iter++;
         step = 4;
         _send_stop_cond();
-        bus_busy = NOT_BUSY;
+        bus_stt = NOT_BUSY;
         break;
 
     case TW_MT_DATA_NACK:
@@ -175,7 +169,7 @@ ISR(TWI_vect)
         step = 4;
         _send_stop_cond();
         _delay_ms(100);
-        bus_busy = NOT_BUSY;
+        bus_stt = NOT_BUSY;
         break;
 
     case TW_MR_SLA_NACK:
@@ -188,22 +182,18 @@ ISR(TWI_vect)
         else
         {
             _send_stop_cond();
-            bus_busy = NOT_BUSY;
+            bus_stt = NOT_BUSY;
         }
         break;
 
     case TW_MR_DATA_ACK:
 
         if (iter < MAX_ATTEMPTS)
-        {
             iter++;
-            _send_start_cond();
-        }
         else
-        {
-            _send_start_cond();
-            bus_busy = NOT_BUSY;
-        }
+            bus_stt = NOT_BUSY;
+    
+        _send_start_cond();
         break;
 
     case TW_BUS_ERROR:
