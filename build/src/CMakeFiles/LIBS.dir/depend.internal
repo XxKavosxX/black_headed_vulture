@@ -5,6 +5,11 @@ src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o
  /home/maike/Github/black_headed_vulture/src/avr_libs/adc.c
  /home/maike/Github/black_headed_vulture/src/avr_libs/adc.h
  /home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o
+ /home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.c
+ /home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.h
+ /home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
+ /home/maike/Github/black_headed_vulture/src/avr_libs/twi.h
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o
  /home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
  /home/maike/Github/black_headed_vulture/src/avr_libs/soft_usart.c

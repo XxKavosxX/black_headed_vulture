@@ -81,9 +81,33 @@ src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o.provides: src/CMakeFiles/LIBS.dir/avr_l
 src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o.provides.build: src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o
 
 
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o: src/CMakeFiles/LIBS.dir/flags.make
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o: ../src/avr_libs/bmp180.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o"
+	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o   -c /home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.c
+
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LIBS.dir/avr_libs/bmp180.c.i"
+	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.c > CMakeFiles/LIBS.dir/avr_libs/bmp180.c.i
+
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LIBS.dir/avr_libs/bmp180.c.s"
+	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.c -o CMakeFiles/LIBS.dir/avr_libs/bmp180.c.s
+
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.requires:
+
+.PHONY : src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.requires
+
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.provides: src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.requires
+	$(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.provides.build
+.PHONY : src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.provides
+
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.provides.build: src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o
+
+
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: src/CMakeFiles/LIBS.dir/flags.make
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: ../src/avr_libs/soft_usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o"
 	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o   -c /home/maike/Github/black_headed_vulture/src/avr_libs/soft_usart.c
 
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.i: cmake_force
@@ -107,7 +131,7 @@ src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o.provides.build: src/CMakeFiles/L
 
 src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o: src/CMakeFiles/LIBS.dir/flags.make
 src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o: ../src/avr_libs/twi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o"
 	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIBS.dir/avr_libs/twi.c.o   -c /home/maike/Github/black_headed_vulture/src/avr_libs/twi.c
 
 src/CMakeFiles/LIBS.dir/avr_libs/twi.c.i: cmake_force
@@ -131,7 +155,7 @@ src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o.provides.build: src/CMakeFiles/LIBS.dir
 
 src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: src/CMakeFiles/LIBS.dir/flags.make
 src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o: ../src/avr_libs/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o"
 	cd /home/maike/Github/black_headed_vulture/build/src && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LIBS.dir/avr_libs/usart.c.o   -c /home/maike/Github/black_headed_vulture/src/avr_libs/usart.c
 
 src/CMakeFiles/LIBS.dir/avr_libs/usart.c.i: cmake_force
@@ -156,6 +180,7 @@ src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.provides.build: src/CMakeFiles/LIBS.d
 # Object files for target LIBS
 LIBS_OBJECTS = \
 "CMakeFiles/LIBS.dir/avr_libs/adc.c.o" \
+"CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o" \
 "CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o" \
 "CMakeFiles/LIBS.dir/avr_libs/twi.c.o" \
 "CMakeFiles/LIBS.dir/avr_libs/usart.c.o"
@@ -164,12 +189,13 @@ LIBS_OBJECTS = \
 LIBS_EXTERNAL_OBJECTS =
 
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o
+src/libLIBS.a: src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/build.make
 src/libLIBS.a: src/CMakeFiles/LIBS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libLIBS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libLIBS.a"
 	cd /home/maike/Github/black_headed_vulture/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LIBS.dir/cmake_clean_target.cmake
 	cd /home/maike/Github/black_headed_vulture/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIBS.dir/link.txt --verbose=$(VERBOSE)
 
@@ -179,6 +205,7 @@ src/CMakeFiles/LIBS.dir/build: src/libLIBS.a
 .PHONY : src/CMakeFiles/LIBS.dir/build
 
 src/CMakeFiles/LIBS.dir/requires: src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o.requires
+src/CMakeFiles/LIBS.dir/requires: src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o.requires
 src/CMakeFiles/LIBS.dir/requires: src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o.requires
 src/CMakeFiles/LIBS.dir/requires: src/CMakeFiles/LIBS.dir/avr_libs/twi.c.o.requires
 src/CMakeFiles/LIBS.dir/requires: src/CMakeFiles/LIBS.dir/avr_libs/usart.c.o.requires

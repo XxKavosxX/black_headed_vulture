@@ -14,6 +14,16 @@ adc.h
 definitions.h
 /home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
 
+/home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.c
+bmp180.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.h
+
+/home/maike/Github/black_headed_vulture/src/avr_libs/bmp180.h
+definitions.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
+twi.h
+/home/maike/Github/black_headed_vulture/src/avr_libs/twi.h
+
 /home/maike/Github/black_headed_vulture/src/avr_libs/definitions.h
 avr/pgmspace.h
 -

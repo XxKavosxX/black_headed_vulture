@@ -5,6 +5,11 @@ src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o: ../src/avr_libs/adc.c
 src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o: ../src/avr_libs/adc.h
 src/CMakeFiles/LIBS.dir/avr_libs/adc.c.o: ../src/avr_libs/definitions.h
 
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o: ../src/avr_libs/bmp180.c
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o: ../src/avr_libs/bmp180.h
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o: ../src/avr_libs/definitions.h
+src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o: ../src/avr_libs/twi.h
+
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: ../src/avr_libs/definitions.h
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: ../src/avr_libs/soft_usart.c
 src/CMakeFiles/LIBS.dir/avr_libs/soft_usart.c.o: ../src/avr_libs/soft_usart.h

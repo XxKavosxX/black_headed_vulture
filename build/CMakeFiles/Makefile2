@@ -84,7 +84,7 @@ src/preinstall:
 src/CMakeFiles/LIBS.dir/all:
 	$(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/depend
 	$(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target LIBS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target LIBS"
 .PHONY : src/CMakeFiles/LIBS.dir/all
 
 # Include target in all.
@@ -94,7 +94,7 @@ all: src/CMakeFiles/LIBS.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/LIBS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/LIBS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/LIBS.dir/rule
@@ -152,7 +152,7 @@ app/CMakeFiles/size_MAIN.dir/all: app/CMakeFiles/firmwaresize_MAIN.awk.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/size_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/size_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/size_MAIN.dir/rule
@@ -179,12 +179,12 @@ clean: app/CMakeFiles/size_MAIN.dir/clean
 app/CMakeFiles/MAIN.elf.dir/all: src/CMakeFiles/LIBS.dir/all
 	$(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/depend
 	$(MAKE) -f app/CMakeFiles/MAIN.elf.dir/build.make app/CMakeFiles/MAIN.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=9,10 "Built target MAIN.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=10,11 "Built target MAIN.elf"
 .PHONY : app/CMakeFiles/MAIN.elf.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/MAIN.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/MAIN.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/MAIN.elf.dir/rule
@@ -212,12 +212,12 @@ app/CMakeFiles/upload_MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 app/CMakeFiles/upload_MAIN.dir/all: app/CMakeFiles/firmwaresize_MAIN.awk.dir/all
 	$(MAKE) -f app/CMakeFiles/upload_MAIN.dir/build.make app/CMakeFiles/upload_MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/upload_MAIN.dir/build.make app/CMakeFiles/upload_MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=18,19 "Built target upload_MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=19,20 "Built target upload_MAIN"
 .PHONY : app/CMakeFiles/upload_MAIN.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/upload_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/upload_MAIN.dir/rule
@@ -244,12 +244,12 @@ clean: app/CMakeFiles/upload_MAIN.dir/clean
 app/CMakeFiles/upload_eeprom_MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 	$(MAKE) -f app/CMakeFiles/upload_eeprom_MAIN.dir/build.make app/CMakeFiles/upload_eeprom_MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/upload_eeprom_MAIN.dir/build.make app/CMakeFiles/upload_eeprom_MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=22,23 "Built target upload_eeprom_MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=23,24 "Built target upload_eeprom_MAIN"
 .PHONY : app/CMakeFiles/upload_eeprom_MAIN.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/upload_eeprom_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/upload_eeprom_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/upload_eeprom_MAIN.dir/rule
@@ -309,7 +309,7 @@ app/CMakeFiles/MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 app/CMakeFiles/MAIN.dir/all: app/CMakeFiles/firmwaresize_MAIN.awk.dir/all
 	$(MAKE) -f app/CMakeFiles/MAIN.dir/build.make app/CMakeFiles/MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/MAIN.dir/build.make app/CMakeFiles/MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=6,7,8 "Built target MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=7,8,9 "Built target MAIN"
 .PHONY : app/CMakeFiles/MAIN.dir/all
 
 # Include target in all.
@@ -319,7 +319,7 @@ all: app/CMakeFiles/MAIN.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/MAIN.dir/rule
@@ -351,7 +351,7 @@ app/CMakeFiles/disassemble_MAIN.dir/all: app/CMakeFiles/MAIN.elf.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/disassemble_MAIN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/disassemble_MAIN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/disassemble_MAIN.dir/rule
@@ -378,7 +378,7 @@ clean: app/CMakeFiles/disassemble_MAIN.dir/clean
 app/CMakeFiles/get_status_MAIN.dir/all:
 	$(MAKE) -f app/CMakeFiles/get_status_MAIN.dir/build.make app/CMakeFiles/get_status_MAIN.dir/depend
 	$(MAKE) -f app/CMakeFiles/get_status_MAIN.dir/build.make app/CMakeFiles/get_status_MAIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=16 "Built target get_status_MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=17 "Built target get_status_MAIN"
 .PHONY : app/CMakeFiles/get_status_MAIN.dir/all
 
 # Build rule for subdir invocation for target.
@@ -473,7 +473,7 @@ tests/CMakeFiles/size_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/size_SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/size_SOFT_USART_TEST.dir/rule
@@ -501,7 +501,7 @@ tests/CMakeFiles/SOFT_USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_SOFT_USA
 tests/CMakeFiles/SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
 	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.dir/depend
 	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=11,12,13 "Built target SOFT_USART_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=12,13,14 "Built target SOFT_USART_TEST"
 .PHONY : tests/CMakeFiles/SOFT_USART_TEST.dir/all
 
 # Include target in all.
@@ -511,7 +511,7 @@ all: tests/CMakeFiles/SOFT_USART_TEST.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/SOFT_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/SOFT_USART_TEST.dir/rule
@@ -539,12 +539,12 @@ tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all: tests/CMakeFiles/firmwaresize_S
 tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
 	$(MAKE) -f tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_SOFT_USART_TEST.dir/depend
 	$(MAKE) -f tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_SOFT_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=20,21 "Built target upload_SOFT_USART_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=21,22 "Built target upload_SOFT_USART_TEST"
 .PHONY : tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/upload_SOFT_USART_TEST.dir/rule
@@ -571,12 +571,12 @@ clean: tests/CMakeFiles/upload_SOFT_USART_TEST.dir/clean
 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all: src/CMakeFiles/LIBS.dir/all
 	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/depend
 	$(MAKE) -f tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build.make tests/CMakeFiles/SOFT_USART_TEST.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=14,15 "Built target SOFT_USART_TEST.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=15,16 "Built target SOFT_USART_TEST.elf"
 .PHONY : tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/SOFT_USART_TEST.elf.dir/rule
@@ -603,12 +603,12 @@ clean: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/clean
 tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USART_TEST.elf.dir/all
 	$(MAKE) -f tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/depend
 	$(MAKE) -f tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=24,25 "Built target upload_eeprom_SOFT_USART_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=25,26 "Built target upload_eeprom_SOFT_USART_TEST"
 .PHONY : tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/rule
@@ -635,7 +635,7 @@ clean: tests/CMakeFiles/upload_eeprom_SOFT_USART_TEST.dir/clean
 tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/all:
 	$(MAKE) -f tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/depend
 	$(MAKE) -f tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build.make tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=17 "Built target get_status_SOFT_USART_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maike/Github/black_headed_vulture/build/CMakeFiles --progress-num=18 "Built target get_status_SOFT_USART_TEST"
 .PHONY : tests/CMakeFiles/get_status_SOFT_USART_TEST.dir/all
 
 # Build rule for subdir invocation for target.
@@ -672,7 +672,7 @@ tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/all: tests/CMakeFiles/SOFT_USAR
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/maike/Github/black_headed_vulture/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/disassemble_SOFT_USART_TEST.dir/rule

@@ -152,6 +152,33 @@ avr_libs/adc.c.s:
 	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/adc.c.s
 .PHONY : avr_libs/adc.c.s
 
+avr_libs/bmp180.o: avr_libs/bmp180.c.o
+
+.PHONY : avr_libs/bmp180.o
+
+# target to build an object file
+avr_libs/bmp180.c.o:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.o
+.PHONY : avr_libs/bmp180.c.o
+
+avr_libs/bmp180.i: avr_libs/bmp180.c.i
+
+.PHONY : avr_libs/bmp180.i
+
+# target to preprocess a source file
+avr_libs/bmp180.c.i:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.i
+.PHONY : avr_libs/bmp180.c.i
+
+avr_libs/bmp180.s: avr_libs/bmp180.c.s
+
+.PHONY : avr_libs/bmp180.s
+
+# target to generate assembly for a file
+avr_libs/bmp180.c.s:
+	cd /home/maike/Github/black_headed_vulture/build && $(MAKE) -f src/CMakeFiles/LIBS.dir/build.make src/CMakeFiles/LIBS.dir/avr_libs/bmp180.c.s
+.PHONY : avr_libs/bmp180.c.s
+
 avr_libs/soft_usart.o: avr_libs/soft_usart.c.o
 
 .PHONY : avr_libs/soft_usart.o
@@ -245,6 +272,9 @@ help:
 	@echo "... avr_libs/adc.o"
 	@echo "... avr_libs/adc.i"
 	@echo "... avr_libs/adc.s"
+	@echo "... avr_libs/bmp180.o"
+	@echo "... avr_libs/bmp180.i"
+	@echo "... avr_libs/bmp180.s"
 	@echo "... avr_libs/soft_usart.o"
 	@echo "... avr_libs/soft_usart.i"
 	@echo "... avr_libs/soft_usart.s"
