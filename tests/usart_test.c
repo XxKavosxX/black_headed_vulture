@@ -3,12 +3,12 @@
 int main()
 {
     usart_enable(MYUBRR);
-    char data;
+    unsigned char data;
     DDRB = 0xFF;
+    int8_t i= 48;
     while (1)
     {
-        data = usart_receive();
-        usart_send(data);
-        _delay_ms(10);
+        usart_write(usart_recv());
+        
     }
 }

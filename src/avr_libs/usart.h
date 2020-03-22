@@ -21,4 +21,7 @@ void usart_write(char *c);
 void usart_write_flash(const char *c);
 void usart_flush(void);
 
+unsigned char *usart_recv();
+
+
 #endif
