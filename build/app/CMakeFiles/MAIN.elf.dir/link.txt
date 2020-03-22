@@ -1,1 +1,0 @@
-avr-gcc -O3 -DNDEBUG   CMakeFiles/MAIN.elf.dir/main.c.o  -o MAIN.elf -mmcu=atmega328p -Wl,--gc-sections -mrelax -Wl,-Map,MAIN.map ../src/libLIBS.a 
