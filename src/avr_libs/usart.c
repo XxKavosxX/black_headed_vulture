@@ -32,13 +32,6 @@ void usart_send(unsigned char data)
 	UDR0 = data;
 }
 
-// unsigned char usart_receive()
-// {
-// 	while (!(UCSR0A & (1 << RXC0)))
-// 		;
-// 	return UDR0;
-// }
-
 unsigned char *usart_recv()
 {
 	while (!(UCSR0A & (1 << RXC0)))
