@@ -1,1 +1,0 @@
-avr-gcc -O3 -DNDEBUG   CMakeFiles/USART_TEST.elf.dir/usart_test.c.o  -o USART_TEST.elf -mmcu=atmega328p -Wl,--gc-sections -mrelax -Wl,-Map,USART_TEST.map ../src/libLIBS.a 

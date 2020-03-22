@@ -1,1 +1,0 @@
-avr-gcc -O3 -DNDEBUG   CMakeFiles/SOFT_USART_TEST.elf.dir/soft_usart_test.c.o  -o SOFT_USART_TEST.elf -mmcu=atmega328p -Wl,--gc-sections -mrelax -Wl,-Map,SOFT_USART_TEST.map ../src/libLIBS.a 
