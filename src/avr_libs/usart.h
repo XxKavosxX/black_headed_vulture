@@ -23,5 +23,10 @@ void usart_flush(void);
 
 unsigned char *usart_recv();
 
+char *float2char(char *buffer, double d, int precision);
+char *int2char(int n);
+char *uint2char(uint32_t n);
+char *long2char(int32_t n);
+
 
 #endif

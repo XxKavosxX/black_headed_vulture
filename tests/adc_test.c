@@ -1,4 +1,4 @@
 #include "adc.h"
 int main(){
-    adc_enable();
+    //adc_enable();
 }

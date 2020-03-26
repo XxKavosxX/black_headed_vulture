@@ -53,7 +53,7 @@ void usart_write_flash(const char *c)
 
 void usart_flush(void)
 {
-	unsigned char dummy = "";
+	unsigned char dummy;
 	while (UCSR0A & (1 << RXC0))
 		dummy = UDR0;
 }
@@ -93,15 +93,21 @@ char *float2char(char *buffer, double d, int precision)
 	}
 	return buffer;
 }
-char *int2char(int numero)
+char *int2char(int n)
 {
-	static char buffer[10];
-	itoa(numero, buffer, 10);
+	static char buffer[20];
+	itoa(n, buffer, 10);
 	return buffer;
 }
-char *long2char(uint32_t numero)
+char *uint2char(uint32_t n)
 {
-	static char buffer[10];
-	utoa(numero, buffer, 10);
+	static char buffer[20];
+	utoa(n, buffer, 10);
+	return buffer;
+}
+char *long2char(int32_t n)
+{
+	static char buffer[20];
+	ltoa(n, buffer, 10);
 	return buffer;
 }

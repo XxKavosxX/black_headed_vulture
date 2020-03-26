@@ -23,7 +23,7 @@ Time to send one bit in us
 19200 bps start, mid, stop: BIT_DELAY, BIT_DELAY, 20             */
 #define BIT_DELAY (1000000 / BAUD)
 
-volatile bool rx_listening = false;
+volatile _Bool rx_listening = 0;
 
 #define MAX_BUFFER_SIZE 200
 
@@ -39,7 +39,7 @@ char softuart_get_heap()
 }
 
 //Only available on PIND 2~7
-bool softuart_config(uint8_t rx_pin, uint8_t tx_pin)
+_Bool softuart_config(uint8_t rx_pin, uint8_t tx_pin)
 {
     if (rx_pin >= 2 && rx_pin <= 7)
     {
@@ -55,9 +55,9 @@ bool softuart_config(uint8_t rx_pin, uint8_t tx_pin)
             set_bit(DDRD, tx_pin);
             TX = tx_pin;
         }
-        return true;
+        return 1;
     }
-    return false;
+    return 0;
 }
 
 void softuart_enable_recv()
@@ -104,7 +104,7 @@ void softuart_write(uint8_t *stream)
 void softuart_recv(void)
 {
     clr_bit(PCMSK2, RX);
-    rx_listening = true;
+    rx_listening = 1;
     char byte = 0;
 
     _delay_us(BIT_DELAY); //start bit delay
@@ -127,7 +127,7 @@ void softuart_recv(void)
     _populate_buffer(byte);
 
     set_bit(PCMSK2, RX);  //enable interrupt on RX
-    rx_listening = false; //it's ok to read buffer now;
+    rx_listening = 0; //it's ok to read buffer now;
 }
 
 char *softuart_read()

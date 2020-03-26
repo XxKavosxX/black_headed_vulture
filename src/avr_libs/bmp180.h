@@ -6,6 +6,10 @@
 //E²PROM address of calibration data contain 16bits
 //Below are MSB address of calibration data MSB.
 //LSB=MSB+1
+
+#define BMP180_I2CADDR 0x77
+
+
 #define AC1_ADDR 0xAA
 #define AC2_ADDR 0xAC
 #define AC3_ADDR 0xAE
@@ -18,16 +22,16 @@
 #define MC_ADDR 0xBC
 #define MD_ADDR 0xBE
 
-bool bmp180_start(uint8_t oversampling_setting);
+_Bool bmp180_start(uint8_t oversampling_setting);
 
-
-long bmp180_read_pressure();
+int32_t bmp180_read_pressure();
 float bmp180_read_temperature(void);
 float bmp180_read_altitude(float sea_level_pressure);
 int32_t bmp180_read_sea_lvl_pressure(float altitude_meters);
+uint32_t bmp180_readUT();
+uint32_t bmp180_readUP();
 
-uint8_t oss;
-int16_t ac1, ac2, ac3, b1, b2, mb, mc, md;
-uint16_t ac4, ac5, ac6;
+
+
 
 #endif

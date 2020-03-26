@@ -30,8 +30,8 @@
 #define get_high_bits(y) ((y&0xF0)>>4)
 #define get_low_bits(y) (y&0x0F)
 
-char *float2char(char *buffer, double d, int precision);
-char* int2char(int number);
-char* long2char(uint32_t number);
+// char *float2char(char *buffer, double d, int precision);
+// char* int2char(int number);
+// char* long2char(uint32_t number);
 
 #endif
