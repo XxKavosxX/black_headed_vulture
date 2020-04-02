@@ -19,19 +19,23 @@
 
 /*
 Time to send one bit in us
-9200 bps
+9600 bps
 19200 bps start, mid, stop: BIT_DELAY, BIT_DELAY, 20             */
 #define BIT_DELAY (1000000 / BAUD)
 
 volatile _Bool rx_listening = 0;
 
-#define MAX_BUFFER_SIZE 200
+#define MAX_BUFFER_SIZE 64
 
 uint8_t rx_buffer[MAX_BUFFER_SIZE];
+uint8_t rx_buffer2;
 volatile uint8_t heap = 0;
 
 uint8_t RX;
 uint8_t TX;
+
+void _populate_buffer(uint8_t byte);
+
 
 char softuart_get_heap()
 {
@@ -121,20 +125,21 @@ void softuart_recv(void)
         b--;
     } while (b > 0);
     /*
-    At 19200 bps start, mid, stop: BIT_DELAY, BIT_DELAY, 20 works fine.
-    Theese magical number (20) achieved by trial and error                  */
-    _delay_us(BIT_DELAY); //stop bit delay
-    _populate_buffer(byte);
-
+    This delay may be unnecessary. 
+    According with AVR304 Application Note */
+    //_delay_us(100); //stop bit delay  
+    //_populate_buffer(byte);
+    rx_buffer2 = byte;
+    
     set_bit(PCMSK2, RX);  //enable interrupt on RX
     rx_listening = 0; //it's ok to read buffer now;
 }
 
-char *softuart_read()
+char softuart_read()
 {
     while (rx_listening)
         ;
-    return rx_buffer;
+    return rx_buffer2;
 }
 
 void _populate_buffer(uint8_t byte)
