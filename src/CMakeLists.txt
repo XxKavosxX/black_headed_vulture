@@ -25,6 +25,12 @@
 file(GLOB SRCS ${PROJECT_ROOT_PATH}/src/avr_libs/*.c
      ${PROJECT_ROOT_PATH}/src/avr_libs/*.h)
 
+file(GLOB FATFS_SRCS ${PROJECT_ROOT_PATH}/src/FatFs/*.c 
+     ${PROJECT_ROOT_PATH}/src/FatFs/*.h)
+
 add_avr_library(LIBS ${SRCS})
+add_avr_library(FATFS ${FATFS_SRCS})
+
 
 target_include_directories(LIBS PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
+target_include_directories(FATFS PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")

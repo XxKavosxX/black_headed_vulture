@@ -12,7 +12,7 @@
 #include "usart.h"
 
 #ifndef SCL_F
-#define SCL_F 1600000UL
+#define SCL_F 1000000UL
 #endif
 
 #define _next_step() TWCR |= (1 << TWINT);
@@ -29,7 +29,7 @@
 #define _I2C_ADDR3 34
 #define INVALID_RETURN -12
 
-volatile unsigned char new_data[2]={0x00};
+unsigned char new_data[2]={0x00};
 uint8_t new_addr;
 volatile uint8_t bus_stt = NOT_BUSY;
 volatile uint8_t iter = 0;
@@ -133,7 +133,7 @@ unsigned char twi_read(unsigned char addr)
 #endif
 
     if (bus_stt == BUSY)
-        return NULL;
+        return 0;
 
     iter = 0;
     data_cntr = 0;
@@ -162,10 +162,10 @@ unsigned char twi_read(unsigned char addr)
     {
 
 #if TWI_DEBUG == 1
-        usart_write("\n         |\n         '-> NULL returned");
+        usart_write("\n         |\n         '-> 0 returned");
 #endif
 
-        return NULL;
+        return 0;
     }
 }
 
@@ -177,7 +177,7 @@ unsigned char *twi_read_bytes(unsigned char addr, uint8_t num)
 #endif
 
     if (bus_stt == BUSY)
-        return NULL;
+        return 0;
 
     iter = 0;
     data_cntr = 0;
@@ -211,10 +211,10 @@ unsigned char *twi_read_bytes(unsigned char addr, uint8_t num)
     {
 
 #if TWI_DEBUG == 1
-        usart_write("\n         |\n         '-> NULL returned");
+        usart_write("\n         |\n         '-> 0 returned");
 #endif
 
-        return NULL;
+        return 0;
     }
 }
 
