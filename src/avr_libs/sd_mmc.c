@@ -17,79 +17,77 @@
 
 void sd_mmc_enable()
 {
-    cs_enable();
+    cs_disable();
     spi_enable();
 }
-void sd_mmc_send_command(uint8_t index, uint16_t args, uint16_t args2, uint8_t CRC)
+static uint8_t sd_mmc_send_command(uint8_t index, uint16_t args, uint16_t args2, uint8_t CRC)
 {
-    spi_send_recv((uint8_t)(args >> 8));
-    spi_send_recv((uint8_t)(args));
-    spi_send_recv((uint8_t)(args2 >> 8));
-    spi_send_recv((uint8_t)(args2));
+#if SD_MMC_DEBUG == 1
+    usart_write("\n    | \n    '-> INTERFACE method 'sd_mmc_send_command' \n");
+#endif
+    uint8_t response;
+    spi_send_recv(index);
+    spi_send_recv((args >> 8) && 0xFF);
+    spi_send_recv((args) && 0xFF);
+    spi_send_recv((args2 >> 8) && 0xFF);
+    spi_send_recv((args2) && 0xFF);
     spi_send_recv(CRC);
-}
-uint8_t sd_mmc_recv_response(uint8_t response)
-{
-    uint8_t cont = 80;
-
-    do
-    {
-        if (spi_send_recv(0xFF) == response)
-            return 1;
-        cont--;
-    } while (cont != 0);
-    return 0;
+    spi_send_recv(0xFF); // Wait response
+    response = spi_send_recv(0xFF); // Get response
+    return response;
 }
 
 uint8_t sd_mmc_start()
 {
 #if SD_MMC_DEBUG == 1
-    usart_write("sd_mmc_start");
+    usart_write("\n    | \n    '-> INTERFACE method 'sd_mmc_start' \n");
 #endif
 
+    set_bit(PORTB, MOSI); //Make sure MISO is HIGH during writing
+    cs_disable();         //Drive CS to low
+
     /* Send 80 pulses of clock */
-    set_bit(PORTB, CS);
-    //set_bit(PORTB, MISO);
-
-    for (uint8_t i = 0; i < 10; i++)
-        spi_send_recv(0xFF);
-
-    clr_bit(PORTB, CS);
-
-    /* Send GO_IDLE_STATE */
-    sd_mmc_send_command(0x40, 0x00, 0x00, 0x95);
-
-    uint8_t response = sd_mmc_recv_response(0x01);
-    usart_send(response + 48);
-
-    /* Verify if is in idle state */
-    if (response==0)
+    uint8_t i = 10;
+    do
     {
+        spi_send_recv(0xFF);
+        i--;
+    } while (i > 0);
+
+    cs_enable();
+    /* Send GO_IDLE_STATE */
+    uint8_t response = sd_mmc_send_command(0x40, 0x00, 0x00, 0x95);
+    /* Verify if is in idle state */
+    if (response == 0)
+    {
+#if SD_MMC_DEBUG == 1
+        usart_write("\n         |\n         '-> 1 returned");
+#endif
         cs_disable();
         return 1;
     }
-    usart_write("pass0");
 
     cs_disable();
     spi_send_recv(0xFF);
     cs_enable();
 
-    usart_write("pass1");
-
     /* Send SEND_OP_COND */
-    uint8_t i = 0xFF;
+    i = 0xFF;
+    uint8_t response2 = 1;
     do
     {
         i--;
-        sd_mmc_send_command(0x41, 0x00, 0x00, 0xFF);
-    } while ((sd_mmc_recv_response(0x00) != 1) && (i != 0));
+        response2 = sd_mmc_send_command(0x41, 0x00, 0x00, 0xFF);
+    } while ((response2 != 0) && (i != 0));
 
-    if (i == 0)
+    if (i == 1)
     {
+#if SD_MMC_DEBUG == 1
+        usart_write("\n         |\n         '-> 2 returned");
+#endif
         cs_disable();
         return 2;
     }
-    usart_write("pass1");
 
     cs_disable();
     spi_send_recv(0xFF);
