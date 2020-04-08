@@ -11,7 +11,7 @@
 #include "usart.h"
 
 uint8_t n = 0;
-unsigned char rcvd_char[200];
+unsigned char rcvd_char[64];
 
 void usart_enable(uint16_t ubrr)
 {
@@ -91,6 +91,18 @@ char *float2char(char *buffer, double d, int precision)
 		}
 		*endOfString = '\0';
 	}
+	return buffer;
+}
+char *int2hex(int n)
+{
+	static char buffer[20];
+	itoa(n, buffer, 16);
+	return buffer;
+}
+char *int2bin(int n)
+{
+	static char buffer[20];
+	itoa(n, buffer, 2);
 	return buffer;
 }
 char *int2char(int n)
