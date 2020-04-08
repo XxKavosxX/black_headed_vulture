@@ -13,29 +13,21 @@
 #include "spi.h"
 #include "usart.h"
 
-uint8_t data;
-
 void spi_enable()
 {
-   set_bit(DDRB, CLK);   //Set as output
+    DDRB |= (1 << CS) | (1 << MOSI) | (1 << CLK);
 
-   clr_bit(DDRB, MISO);  //Set as
-   set_bit(PORTB, MISO); //Pulled up
+    // enable pull up resistor in MISO
+    PORTB |= (1 << MISO);
 
-   set_bit(DDRB, MOSI);  //Set as output
-   set_bit(PORTB, MOSI); //Pulled up
-
-   set_bit(DDRB, CS);    //Set as output
-
-
-   SPCR = (1 << SPE) | (1 << MSTR) | (1 << SPR1) | (1<< SPR0); //Spi enable, Master Select, Frequency F_CPU/64
+    // enable SPI, set as master, and clock to fosc/128
+    SPCR = (1 << SPE) | (1 << MSTR) | (1 << SPR1) | (1 << SPR0);
 }
-uint8_t spi_send_recv(uint8_t data)
+uint8_t spi(uint8_t data)
 {
    SPDR = data; //Start a transmission
-   asm volatile("nop");
 
-   while (!(tst_bit(SPDR, SPIF))) //Wait for exchange of data
-      ;
+   while(!(SPSR & (1 << SPIF))); //Wait for exchange of data
+   
    return SPDR; //Return received data from Slave
 }

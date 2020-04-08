@@ -13,14 +13,12 @@
     Bad timing causes failure in receiving data stream. Take care to calculate how many 
     instructios are there between the interrupt EFFECTIVE REGISTER and the code being
     ready to read the pin.
-    see doc: https://onlinedocs.microchip.com/pr/GUID-ED37252C-1496-4275-BAEF-5152050ED2C2-en-US-2/index.html  */
+    see doc: https://onlinedocs.microchip.com/pr/GUID-ED37252C-1496-4275-BAEF-5152050ED2C2-en-US-2/index.html  
+
+*/
 
 #include "soft_usart.h"
 
-/*
-Time to send one bit in us
-9600 bps
-19200 bps start, mid, stop: BIT_DELAY, BIT_DELAY, 20             */
 #define BIT_DELAY (1000000 / BAUD)
 
 volatile _Bool rx_listening = 0;

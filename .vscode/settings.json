@@ -24,8 +24,10 @@
                 "unity_internals.h": "c",
                 "usart.h": "c",
                 "definitions.h": "c",
-                "stdlib.h": "c",                
-                "stdarg.h": "c"
+                "stdlib.h": "c",
+                "stdarg.h": "c",
+                "sd_mmc.h": "c"
         },
-        "C_Cpp.intelliSenseEngineFallback": "Enabled"
+        "C_Cpp.intelliSenseEngineFallback": "Enabled",
+        "C_Cpp.errorSquiggles": "Disabled"
 }

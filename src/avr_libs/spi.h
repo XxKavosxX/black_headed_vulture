@@ -7,7 +7,7 @@
 #define CS PB2   //Digital pin 10
 
 void spi_enable();
-uint8_t spi_send_recv(uint8_t data);
+uint8_t spi(uint8_t data);
 
 
 #endif

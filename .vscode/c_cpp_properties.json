@@ -6,6 +6,7 @@
                 "${workspaceFolder}/**",
                 "/usr/lib/avr/**",
                 "/usr/lib/avr/include/avr/**",
+                "/usr/lib/avr/include/util/**",
                 "/usr/include/**",
                 "/usr/include/linux/**"
             ],

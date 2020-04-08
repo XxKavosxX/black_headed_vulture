@@ -14,11 +14,15 @@
 #define BMP_DEBUG 0
 
 uint8_t read8(uint8_t addr);
+
 uint16_t read16(uint8_t addr);
+
 void write16(uint8_t addr, uint8_t data);
 
 static uint8_t oss;
+
 int16_t ac1, ac2, ac3, b1, b2, mb, mc, md;
+
 uint16_t ac4, ac5, ac6;
 
 _Bool bmp180_start(uint8_t oversampling_setting)
