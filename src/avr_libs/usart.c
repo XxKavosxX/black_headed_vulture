@@ -15,14 +15,21 @@ unsigned char rcvd_char[64];
 
 void usart_enable(uint16_t ubrr)
 {
-	UBRR0H = (ubrr >> 8); // Take ATmega328P datasheet
-	UBRR0L = ubrr;
-	UCSR0A = 0;
+	// UBRR0H = (ubrr >> 8); // Take ATmega328P datasheet
+	// UBRR0L = ubrr;
+	// UCSR0A = 0;
 
-	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
-	UCSR0C = (1 << USBS0) | (1 << UCSZ01) | (1 << UCSZ00);
-	UCSR0B |= (1 << RXCIE0); //Enable receiver interrupt
-	sei();
+	// UCSR0B = (1 << RXEN0) | (1 << TXEN0);
+	// UCSR0C = (1 << USBS0) | (1 << UCSZ01) | (1 << UCSZ00);
+	// UCSR0B |= (1 << RXCIE0); //Enable receiver interrupt
+	// sei();
+
+	// set baudrate in UBRR
+	UBRR0L = (uint8_t)(ubrr & 0xFF);
+	UBRR0H = (uint8_t)(ubrr >> 8);
+
+	// enable the transmitter and receiver
+	UCSR0B |= (1 << RXEN0) | (1 << TXEN0);
 }
 
 void usart_send(unsigned char data)

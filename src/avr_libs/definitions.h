@@ -4,7 +4,7 @@
 #define __AVR_ATmega328P__
 #endif
 #define F_CPU 16000000UL // or whatever may be your frequency
-#define BAUD 9600
+#define BAUD 115200
 #define __DELAY_BACKWARD_COMPATIBLE__
 #define __DELAY_ROUND_DOWN__
 

@@ -50,7 +50,6 @@ void test_write()
 {
 
     softuart_config(2, 3);
-    softuart_enable_recv();
     usart_enable(MYUBRR);
     uint8_t d = 0;
     while (1)

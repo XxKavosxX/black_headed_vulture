@@ -23,6 +23,7 @@ void usart_test_send()
     int8_t i = 48;
     while (1)
     {
-        usart_write("Test message...\n");
+        usart_send('a');
+        _delay_ms(100);
     }
 }

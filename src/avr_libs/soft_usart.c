@@ -79,9 +79,9 @@ void softuart_send_char(const uint8_t byte)
     do
     {
         if (byte & _BV(8 - b))
-            set_bit(PORTD, TX);
+            PORTD |= (1<<TX);
         else
-            clr_bit(PORTD, TX);
+            PORTD &= ~(1<<TX);
         _delay_us(BIT_DELAY);
 
         b--;
@@ -103,54 +103,54 @@ void softuart_write(uint8_t *stream)
     } while (byte > 0);
 }
 
-void softuart_recv(void)
-{
-    clr_bit(PCMSK2, RX);
-    rx_listening = 1;
-    char byte = 0;
+// void softuart_recv(void)
+// {
+//     clr_bit(PCMSK2, RX);
+//     rx_listening = 1;
+//     char byte = 0;
 
-    _delay_us(BIT_DELAY); //start bit delay
+//     _delay_us(BIT_DELAY); //start bit delay
 
-    //Read each bit
-    uint8_t b = 8;
-    do
-    {
-        if (PIND & _BV(RX))
-            byte |= (1 << (8 - b));
+//     //Read each bit
+//     uint8_t b = 8;
+//     do
+//     {
+//         if (PIND & _BV(RX))
+//             byte |= (1 << (8 - b));
 
-        _delay_us(BIT_DELAY);
+//         _delay_us(BIT_DELAY);
 
-        b--;
-    } while (b > 0);
-    /*
-    This delay may be unnecessary. 
-    According with AVR304 Application Note */
-    //_delay_us(100); //stop bit delay  
-    //_populate_buffer(byte);
-    rx_buffer2 = byte;
+//         b--;
+//     } while (b > 0);
+//     /*
+//     This delay may be unnecessary. 
+//     According with AVR304 Application Note */
+//     //_delay_us(100); //stop bit delay  
+//     //_populate_buffer(byte);
+//     rx_buffer2 = byte;
     
-    set_bit(PCMSK2, RX);  //enable interrupt on RX
-    rx_listening = 0; //it's ok to read buffer now;
-}
+//     set_bit(PCMSK2, RX);  //enable interrupt on RX
+//     rx_listening = 0; //it's ok to read buffer now;
+// }
 
-char softuart_read()
-{
-    while (rx_listening)
-        ;
-    return rx_buffer2;
-}
+// char softuart_read()
+// {
+//     while (rx_listening)
+//         ;
+//     return rx_buffer2;
+// }
 
-void _populate_buffer(uint8_t byte)
-{
-    if (heap == 0)
-        memset(rx_buffer, 0, sizeof(rx_buffer)); //On buffer overflows or new data stream
-                                                 //clean buffer and write first byte of received data
-    rx_buffer[heap] = byte;
-    heap = ++heap % MAX_BUFFER_SIZE;
-}
+// void _populate_buffer(uint8_t byte)
+// {
+//     if (heap == 0)
+//         memset(rx_buffer, 0, sizeof(rx_buffer)); //On buffer overflows or new data stream
+//                                                  //clean buffer and write first byte of received data
+//     rx_buffer[heap] = byte;
+//     heap = ++heap % MAX_BUFFER_SIZE;
+// }
 
-ISR(PCINT2_vect)
-{
-    if (!(PIND & _BV(RX))) //If low, falling edge: start bit
-        softuart_recv();
-}
+// ISR(PCINT2_vect)
+// {
+//     if (!(PIND & _BV(RX))) //If low, falling edge: start bit
+//         softuart_recv();
+// }

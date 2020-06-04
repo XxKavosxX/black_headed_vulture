@@ -207,10 +207,10 @@ uint8_t sd_mmc_command(uint8_t index, uint32_t args, uint8_t CRC)
 '=========================================================================*/
 uint8_t sd_mmc_response()
 {
-    uint8_t i = 0, resp;
+    uint8_t i = 0, res;
 
     // keep polling until actual data received
-    while ((resp = spi(0xFF)) == 0xFF)
+    while ((res = spi(0xFF)) == 0xFF)
     {
 
         i++;
@@ -219,7 +219,7 @@ uint8_t sd_mmc_response()
         if (i > 8)
             break;
     }
-    return resp;
+    return res;
 }
 
 /*=========================================================================|
@@ -232,6 +232,9 @@ uint8_t sd_mmc_go_idle()
 #if SD_MMC_DEBUG == 1
     usart_write("\n    | \n    '-> INTERFACE method 'sd_mmc_go_idle' \n");
 #endif
+
+    uint8_t response;
+
     // assert chip select
     spi(0xFF);
     cs_enable();
@@ -241,7 +244,7 @@ uint8_t sd_mmc_go_idle()
     sd_mmc_command(CMD0, 0x00, CMD0_CRC);
 
     // read response
-    uint8_t response = sd_mmc_response();
+    response = sd_mmc_response();
 
     // deassert chip select
     spi(0xFF);
@@ -348,6 +351,8 @@ void sd_mmc_read_ocr(uint8_t *res)
 '=========================================================================*/
 uint8_t sd_mmc_send_app()
 {
+    uint8_t response;
+    
     // assert chip select
     spi(0xFF);
     cs_enable();
@@ -357,14 +362,14 @@ uint8_t sd_mmc_send_app()
     sd_mmc_command(CMD55, CMD55_ARG, CMD55_CRC);
 
     // read response
-    uint8_t res1 = sd_mmc_response();
+    response = sd_mmc_response();
 
     // deassert chip select
     spi(0xFF);
     cs_disable();
     spi(0xFF);
 
-    return res1;
+    return response;
 }
 
 /*=========================================================================|
@@ -374,6 +379,8 @@ uint8_t sd_mmc_send_app()
 '=========================================================================*/
 uint8_t sd_mmc_send_op_cond()
 {
+    uint8_t response;
+
     // assert chip select
     spi(0xFF);
     cs_enable();
@@ -383,14 +390,14 @@ uint8_t sd_mmc_send_op_cond()
     sd_mmc_command(ACMD41, ACMD41_ARG, ACMD41_CRC);
 
     // read response
-    uint8_t res1 = sd_mmc_response();
+    response = sd_mmc_response();
 
     // deassert chip select
     spi(0xFF);
     cs_disable();
     spi(0xFF);
 
-    return res1;
+    return response;
 }
 
 /*=========================================================================|
@@ -400,8 +407,8 @@ uint8_t sd_mmc_send_op_cond()
 '=========================================================================*/
 uint8_t sd_mmc_read_block(uint32_t addr, uint8_t *buf, uint8_t *token)
 {
-    uint8_t res1, read;
-    uint16_t readAttempts;
+    uint8_t response, read;
+    uint16_t attempts;
 
     // set token to none
     *token = 0xFF;
@@ -415,14 +422,14 @@ uint8_t sd_mmc_read_block(uint32_t addr, uint8_t *buf, uint8_t *token)
     sd_mmc_command(CMD17, addr, CMD17_CRC);
 
     // read R1
-    res1 = sd_mmc_response();
+    response = sd_mmc_response();
 
     // if response received from card
-    if (res1 != 0xFF)
+    if (response != 0xFF)
     {
         // wait for a response token (timeout = 100ms)
-        readAttempts = 0;
-        while (++readAttempts != SD_MAX_READ_ATTEMPTS)
+        attempts = 0;
+        while (++attempts != SD_MAX_READ_ATTEMPTS)
             if ((read = spi(0xFF)) != 0xFF)
                 break;
 
@@ -447,7 +454,7 @@ uint8_t sd_mmc_read_block(uint32_t addr, uint8_t *buf, uint8_t *token)
     cs_disable();
     spi(0xFF);
 
-    return res1;
+    return response;
 }
 
 /*=========================================================================|
@@ -457,7 +464,7 @@ uint8_t sd_mmc_read_block(uint32_t addr, uint8_t *buf, uint8_t *token)
 '=========================================================================*/
 uint8_t sd_mmc_write_block(uint32_t addr, uint8_t *buf, uint8_t *token)
 {
-    uint8_t readAttempts, read, res[5];
+    uint8_t attempts, read, res[5];
 
     // set token to none
     *token = 0xFF;
@@ -484,8 +491,8 @@ uint8_t sd_mmc_write_block(uint32_t addr, uint8_t *buf, uint8_t *token)
             spi(buf[i]);
 
         // wait for a response (timeout = 250ms)
-        readAttempts = 0;
-        while (++readAttempts != SD_MAX_WRITE_ATTEMPTS)
+        attempts = 0;
+        while (++attempts != SD_MAX_WRITE_ATTEMPTS)
         {
             if ((read = spi(0xFF)) != 0xFF)
             {
@@ -501,10 +508,10 @@ uint8_t sd_mmc_write_block(uint32_t addr, uint8_t *buf, uint8_t *token)
             *token = 0x05;
 
             // wait for write to finish (timeout = 250ms)
-            readAttempts = 0;
+            attempts = 0;
             while (spi(0xFF) == 0x00)
             {
-                if (++readAttempts == SD_MAX_WRITE_ATTEMPTS)
+                if (++attempts == SD_MAX_WRITE_ATTEMPTS)
                 {
                     *token = 0x00;
                     break;
